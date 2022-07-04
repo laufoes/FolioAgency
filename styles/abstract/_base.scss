@@ -1,0 +1,8 @@
+@import '../abstract/variables';
+
+html, body {
+    font-family: $font;
+    font-size: $body-font-size;
+    color: $body-color;
+    margin: 0 0;
+}

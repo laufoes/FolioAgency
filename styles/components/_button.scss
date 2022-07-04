@@ -1,0 +1,21 @@
+@import '../abstract/variables';
+
+.contact-button {
+    padding: 20px 40px 20px 40px;
+    background-color: $primary-button-color;
+    color: $secondary-button-color;
+    font-size: $button-font-size; 
+    font-size: $button-font-size;
+    border: none;
+    border-radius: $primary-button-border-radius;
+}
+
+.recent-work-button {
+    padding: 20px 40px 20px 40px;
+    background-color: $terciary-button-color;
+    color: $secondary-button-color;
+    font-size: $button-font-size; 
+    font-size: $button-font-size;
+    border: none;
+    border-radius: $primary-button-border-radius;
+}

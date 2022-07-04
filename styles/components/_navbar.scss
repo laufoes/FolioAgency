@@ -1,0 +1,43 @@
+@import '../abstract/variables';
+@import './button';
+
+header {
+    z-index: 1;
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        height: 10vh;
+        padding: 3rem 5rem;
+        .nav-logo {
+            margin: 10% 0 10%;
+        }
+        .menu-items {
+            flex-grow: 3;
+        }
+        .menu-list {
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+            li {
+                padding-right: 4rem;
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: $body-color;
+                    font-size: $navbar-font-size;
+                }
+                .navbar-active {
+                    color: $active-color;
+                }
+                .navbar-deactive {
+                    color: $deactive-color;
+                }
+            }
+            .navbar-button {
+                height: 100%;
+            }
+        }
+    }
+}

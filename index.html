@@ -6,56 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folio Agency</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="hero-bg-container">
+        <img src="/images/hero/line-1.svg" class="hero-bg-image">
+    </div>
 
-
-    <!-- nabar -->
+    <!-- nav bar -->
     <header>
         <nav class="nav-container">
-            <img src="/images/logo-light-mode.svg" alt="Agency Logo" class="nav-logo">
-            <ul>
-                <li class="active"><a href="#">About</a></li>
-                <li><a href="/#">Work</a></li>
-                <li><a href="/#">Services</a></li>
-                <li><a href="/#">Jobs</a></li>
-            </ul>
-            <button class="contact-button">Contact Us</button>
+            <div class="nav-logo">
+                <img src="/images/logo-light-mode.svg" alt="Agency Logo" class="nav-logo">
+            </div>
+            <div class="menu-items">
+                <ul class="menu-list">
+                    <li><a href="#" class="navbar-active">About</a></li>
+                    <li><a href="/#">Work</a></li>
+                    <li><a href="/#" class="navbar-deactive">Services</a></li>
+                    <li><a href="/#">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="navbar-button">
+                <button class="contact-button">Contact Us</button>
+            </div>
         </nav>
     </header>
 
     <main>
+
         <!-- hero section -->
-        <section id="hero-header">
-            <div>
-                <h1 class="d1">Stand Out from The Crowd.</h1>
-                <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands and experiences.</p>
-                <button>Recent Work</button>
-                <a href="#"><button class="scroll-down-button"></button>Scroll Down</a>
+        <section class="hero-container">
+            <div class="hero-content">
+                <div class="hero-content-description">
+                    <h1 class="hero-d1">Stand Out from The Crowd.</h1>
+                    <p class="description-text">Agency is a full-service agency, busy designing and building beautiful digital products, brands and experiences.</p>
+                    <button class="recent-work-button">Recent Work</button>
+                </div>
+                <div class="scroll-down-container">
+                    <a href="#"><img src="/images/hero/scroll-down-arrow.svg" alt="Arrow pointing down." class="scroll-down-arrow"></a>
+                    <p>Scroll Down</p>
+                </div>
             </div>
-            <div>
-                <img src="/images/hero/hero-image.svg">
+            <div class="hero-img-container">
+                <img src="/images/hero/hero-image.svg" class="hero-img">
             </div>
         </section>
 
 
         <!-- about us section -->
-        <section>
-            <div>
-                <div>
+        <section class="about-us-container">
+            <div class="about-bg-container">
+                <!-- <img src="/images/about/shape-bg.svg" alt="Background shape" class="about-bg-shape"> -->
+            </div>
+            <div class="about-us-title-wrapper">
+                <div class="section-logo">
                     <img src="/images/logo-small.svg">
                 </div>
-                <div>
-                    <p>02.</p>
-                    <p>Who We Are</p>
+                <div class="title-content">
+                    <div class="title-small">
+                        <p>01.</p>
+                        <p>Who We Are</p>
+                    </div>
                     <h2>We Make Designs that Lead and Ispire.</h2>
                 </div>
-                <div>
-                    <button>←</button>
-                    <button>→</button>
+                <div class="navigation-buttons">
+                    <img src="/images/left-normal.svg">
+                    <img src="/images/right-hover.svg">
                 </div>
             </div>
 
