@@ -1,0 +1,204 @@
+@import '../abstract/variables';
+@import './media-queries';
+@import './button';
+
+.whatwedo-container {
+    background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+    z-index: -100;
+    @include mobile {
+        width: 375px;
+        height: 2419px;
+    }
+    .whatwedo-bg1 {
+        position: absolute;
+        z-index: -1;
+        @include mobile {
+            top: 932px;
+            left: 0;
+            width: 467px;
+            height: 555px;
+        }
+    }
+    .whatwedo-bg2 {
+        position: absolute;
+        @include mobile {
+            top: 1836px;
+            left: -53px;
+            width: 467px;
+            height: 555px;
+            z-index: -1;
+        }
+    }
+    .whatwedo-wrapper {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 227px;
+            height: 304px;
+            padding-top: 128px;
+            padding-left: 32px;
+            margin-bottom: 56px;
+        }
+        .subtitle {
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+                width: 131px;
+                height: 18px;
+            }
+            .active {
+                color: $active-color;
+                font-weight: 600px;
+            }
+            .subtitle-logo {
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+        .whatwedo-title {
+            align-self: flex-start;
+            font-weight: 600;
+            @include mobile {
+                width: 230px;
+                height: 192px;
+                font-size: $h4-mobile-size;
+                color: $dark-color;
+            }
+        }
+        .arrows-nav {
+            @include mobile {
+                width: 144px;
+                height: 48px;
+                img {
+                    height: 48px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    .cards-wrapper {
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 311px;
+            height: 856px;
+            margin-bottom: 56px;
+            padding-bottom: 24px;
+            padding-left: 32px;
+        }
+        .card-service {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            color: $active-color;
+            cursor: pointer;
+            transition: 400ms;
+            &:hover {
+                background-color: $active-color;
+                color: $secondary-color;
+            }
+            @include mobile {
+                width: 311px;
+                height: 190px;
+                border-radius: 32px;
+                box-shadow: 0px 8px rgba(255, 255, 255, 0.5);
+            }
+        }
+        .card-img {
+            @include mobile {
+                width: 91px;
+                height: 91px;
+            }
+        }
+    }
+    .achievement-wrapper {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            justify-content: space-between;
+            width: 227px;
+            height: 399px;
+            padding-left: 32px;
+            margin-bottom: 30px;
+        }
+        .achievement-subtitle-wrapper {
+            display: flex;
+            .logo-wrapper {
+                @include mobile {
+                    display: none;
+                }
+            }
+            .subtitle {
+                display: flex;
+                justify-content: space-between;
+                @include mobile {
+                    width: 156px;
+                    height: 24px;
+                }
+                .deactive {
+                    color: $deactive-color;
+                }
+                .content {
+                    color: $dark-color;
+                    font-weight: 600;
+                }
+            }
+        }
+        .achievement-title {
+            @include mobile {
+                font-size: $h6-mobile-size;
+                line-height: 32px;
+                font-weight: 600;
+            }
+        }
+        .project-counter-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            @include mobile {
+                width: 194px;
+                height: 191px;
+            }
+            .project-counter {
+                color: $active-color;
+                font-size: 140px;
+            }
+            h6 {
+                font-weight: 600;
+            }
+        }
+    }
+    .image-wrapper {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 375px;
+        }
+        .img-desktop {
+            @include mobile {
+                display: none;
+            }
+        }
+        .phone-mobile {
+            display: none;
+            @include mobile {
+                display: block;
+                width: 350px;
+                height: 460px;
+                margin-bottom: 56px;
+            }
+        }
+        .pagination {
+            @include mobile {
+                width: 69px;
+                height: 12px;
+            }
+        }
+    }
+}
