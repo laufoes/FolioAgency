@@ -5,86 +5,112 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Folio Agency</title>
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div class="hero-bg-container">
-        <img src="/images/hero/line-1.svg" class="hero-bg-image">
-    </div>
-
     <!-- nav bar -->
-    <header>
-        <nav class="nav-container">
+    <header class="nav-container">
+        <nav class="nav-wrapper">
             <div class="nav-logo">
-                <img src="/images/logo-light-mode.svg" alt="Agency Logo" class="nav-logo">
+                <img src="/images/logo-light-mode.svg" alt="Agency Logo" class="nav-img">
             </div>
-            <div class="menu-items">
-                <ul class="menu-list">
-                    <li><a href="#" class="navbar-active">About</a></li>
+            <div class="nav-menu">
+                <ul class="menu-items">
+                    <li><a href="#" class="nav-active">About</a></li>
                     <li><a href="/#">Work</a></li>
-                    <li><a href="/#" class="navbar-deactive">Services</a></li>
+                    <li><a href="/#" class="nav-deactive">Services</a></li>
                     <li><a href="/#">Jobs</a></li>
                 </ul>
             </div>
             <div class="navbar-button">
                 <button class="contact-button">Contact Us</button>
             </div>
+            <div class="nav-mobile">
+                <img src="./images/nav/burger icon.svg">
+            </div>
+
         </nav>
+        <div class="nav-notification">
+            <div class="nav-notification-text">
+                2
+            </div>
+        </div>
     </header>
 
     <main>
 
         <!-- hero section -->
         <section class="hero-container">
-            <div class="hero-content">
-                <div class="hero-content-description">
-                    <h1 class="hero-d1">Stand Out from The Crowd.</h1>
-                    <p class="description-text">Agency is a full-service agency, busy designing and building beautiful digital products, brands and experiences.</p>
-                    <button class="recent-work-button">Recent Work</button>
+            <div class="hero-bg">
+                <img src="/images/hero/line-1.svg" alt="Lines on background">
+            </div>
+            <div class="hero-wrapper">
+                <div class="hero-title">
+                    <h1 class="display1">Stand Out from The Crowd</h1>
                 </div>
-                <div class="scroll-down-container">
-                    <a href="#"><img src="/images/hero/scroll-down-arrow.svg" alt="Arrow pointing down." class="scroll-down-arrow"></a>
-                    <p>Scroll Down</p>
+                <div class="hero-description">
+                    <p>Agency is a full-service agency, busy designing and building beautiful digital products, brands, and experiences.</p>
+                </div>
+                <div class="hero-button">
+                    <button class="recent-work-button">Recent Work</button>
+            </div>
+            <div class="scroll-wrapper">
+                <img src="/images/hero/scroll-down-arrow.svg" alt="Arrow pointing down." class="scroll-arrow">
+                <div class="scroll-desktop">
+                    <p>Scroll down</p>
+                </div>
+                <div class="scroll-tablet">
+                    <p>Swipe down to explore</p>
                 </div>
             </div>
-            <div class="hero-img-container">
-                <img src="/images/hero/hero-image.svg" class="hero-img">
+            <div class="hero-img">
+                <img src="/images/hero/hero-image.svg" alt="3D PC model" class="hero-pc">
             </div>
         </section>
 
 
         <!-- about us section -->
-        <section class="about-us-container">
-            <div class="about-bg-container">
-                <!-- <img src="/images/about/shape-bg.svg" alt="Background shape" class="about-bg-shape"> -->
-            </div>
-            <div class="about-us-title-wrapper">
-                <div class="section-logo">
-                    <img src="/images/logo-small.svg">
+        <section class="who-we-are-container">
+            <div class="about-us-container">
+                <div class="about-bg-container">
+                    <img src="/images/about/shape-bg.svg" alt="Background shape" class="about-bg-shape">
                 </div>
-                <div class="title-content">
-                    <div class="title-small">
-                        <p>01.</p>
-                        <p>Who We Are</p>
+                <div class="about-us-line-container">
+                    <img src="/images/about/line.svg" alt="Background line shape" class="about-bg-shape">
+                </div>
+                <div class="about-us-title-wrapper">
+                    <div class="section-logo">
+                        <img src="/images/logo-small.svg">
                     </div>
-                    <h2>We Make Designs that Lead and Ispire.</h2>
+                    <div class="title-content">
+                        <div class="title-small">
+                            <p class="deactive-text">01</p>
+                            <p>Who We Are</p>
+                        </div>
+                        <h2>We Make Designs that Lead and Ispire.</h2>
+                    </div>
+                    <div class="navigation-buttons">
+                        <img src="/images/left-normal.svg" class="arrows">
+                        <img src="/images/right-hover.svg" class="arrows">
+                    </div>
                 </div>
-                <div class="navigation-buttons">
-                    <img src="/images/left-normal.svg">
-                    <img src="/images/right-hover.svg">
-                </div>
-            </div>
 
-            
-            <div>
-                <ul>
-                    <li>2017</li>
-                    <li>2018</li>
-                    <li>2019</li>
-                    <li>2020</li>
-                    <li>2021</li>
-                </ul>
-                <img src="/images/about/desktop.svg"> <!-- deveria ser um carrousel eu acho -->
+                
+                <div class="about-us-content-container">
+                    <div>
+                        <ul>
+                            <li>2017</li>
+                            <li>2018</li>
+                            <li>2019</li>
+                            <li>2020</li>
+                            <li>2021</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <img src="/images/about/desktop.svg">
+                    </div>
+                </div>
             </div>
 
 
@@ -374,6 +400,7 @@
             </ul>
         </div>
     </footer>
+
 
 </body>
 </html>

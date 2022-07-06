@@ -1,21 +1,54 @@
 @import '../abstract/variables';
 
 .contact-button {
-    padding: 20px 40px 20px 40px;
+    width: 180px;
+    height: 64px;
     background-color: $primary-button-color;
     color: $secondary-button-color;
-    font-size: $button-font-size; 
-    font-size: $button-font-size;
+    font-size: $body-size; 
+    font-size: $body-size;
     border: none;
-    border-radius: $primary-button-border-radius;
+    border-radius: 8px;
+    display: pointer;
+    transition: 400ms;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+    @include tablet {
+        font-size: $mobile-size;
+        font-weight: 200;
+        width: 160px;
+        height: 56px;
+    }
+    @include mobile {
+        display: none;
+    }
 }
 
 .recent-work-button {
-    padding: 20px 40px 20px 40px;
     background-color: $terciary-button-color;
     color: $secondary-button-color;
-    font-size: $button-font-size; 
-    font-size: $button-font-size;
+    font-size: $body-size; 
+    font-size: $body-size;
     border: none;
-    border-radius: $primary-button-border-radius;
+    border-radius: 8px;
+    display: pointer;
+    transition: 400ms;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+    @include tablet {
+        font-size: $mobile-size;
+        font-weight: 200;
+        width: 160px;
+        height: 56px;
+    }
+    @include mobile {
+        font-size: $mobile-size;
+        font-weight: 200;
+        width: 160px;
+        height: 56px;
+    }
 }

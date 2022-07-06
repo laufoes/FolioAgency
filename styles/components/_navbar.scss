@@ -1,43 +1,122 @@
 @import '../abstract/variables';
+@import './media-queries';
 @import './button';
 
-header {
-    z-index: 1;
-    .nav-container {
+.nav-container {
+    width: 1440px;
+    height: 128px;
+    @include tablet {
+        width: 1024px;
+        height: 96px;
+    }
+    @include mobile {
+        width: 375px;
+        height: 128px;
+    }
+    .nav-wrapper {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        text-align: center;
-        height: 10vh;
-        padding: 3rem 5rem;
+        width: 1296px;
+        height: 64px;
+        // background: blue;
+        padding-top: 64px;
+        padding-left: 72px;
+        @include tablet {
+            width: 924px;
+            height: 56px;
+            padding-top: 40px;
+            padding-left: 50px;
+        }
+        @include mobile {
+            width: 311px;
+            height: 32px;
+            padding-top: 52px;
+            padding-left: 32px;
+        }
         .nav-logo {
-            margin: 10% 0 10%;
+            width: 159px;
+            height: 40px;
+            @include tablet {
+                width: 127px;
+                height: 32px;
+            }
+            @include mobile {
+                width: 127px;
+                height: 32px;
+            }
         }
-        .menu-items {
-            flex-grow: 3;
-        }
-        .menu-list {
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-            li {
-                padding-right: 4rem;
+        .nav-menu {
+            width: 392px;
+            height: 24px;
+            @include tablet {
+                width: 346px;
+                height: 22px;
+            }
+            @include mobile  {
+                display: none;
+            }
+            .menu-items {
+                display: flex;
+                justify-content: space-between;
                 a {
                     text-decoration: none;
                     font-weight: 500;
-                    color: $body-color;
-                    font-size: $navbar-font-size;
+                    color: $primary-color;
+                    font-size: $body-size;
+                    font-weight: 600;
+                    cursor: pointer;
                 }
-                .navbar-active {
+                .nav-active {
                     color: $active-color;
                 }
-                .navbar-deactive {
+                .nav-deactive {
                     color: $deactive-color;
                 }
             }
-            .navbar-button {
-                height: 100%;
+        }
+        .nav-mobile {
+            display: none;
+            @include tablet {
+                display: none;
             }
+            @include mobile {
+                display: inline;
+            }
+        }
+    }
+    .nav-notification {
+        position: absolute;
+        top: 72px;
+        left: 924px;
+        height: 24px;
+        width: 24px;
+        border: none;
+        border-radius: 50%;
+        background: linear-gradient(#3A8FFF, #0837AE);
+        @include tablet {
+            top: 46px;
+            left: 677px;
+        }
+        @include mobile {
+            display:none;
+        }
+    }
+    .nav-notification-text {
+        position: relative;
+        height: 18px;
+        width: 9px;
+        left: 7px;
+        top: 5px;
+        font-family: 'SF Pro Text';
+        font-style: normal;
+        font-weight: lighter;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        @include mobile {
+            display: none;
         }
     }
 }

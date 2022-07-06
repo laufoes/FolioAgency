@@ -1,60 +1,141 @@
 @import '../abstract/variables';
-
-.hero-bg-container {
-    position: absolute;
-    margin-top: -10vh;
-    margin-left: 17vw;
-    z-index: -1;
-    .hero-bg-image { 
-        height: 100%;
-        width: auto;
-    }
-}
+@import './media-queries';
+@import './button';
 
 .hero-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex start;
-    margin: 0 $main-section-margin 5vh;
-    height: 75vh;
-    z-index: 1;
-    .hero-content {
-        flex-flow: column wrap;
-        height: auto;
-        width: 50%;
-        .hero-content-description {
-            justify-content: space-between;
-            padding-right: 6rem;
-            .hero-d1 {
-                margin-top: 0;
-                margin-bottom: 0;
-                font-size: $display1-font-size;
-                color: $d1-color;
-                font-weight: bolder;
+    width: 1440px;
+    height: 896px;
+    @include tablet {
+        width: 1024px;
+        height: 768px;
+        @include mobile {
+            width: 375px;
+            height: 687px;
+        }
+    }
+    .hero-wrapper {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 467px;
+        height: 548px;
+        margin-top: 110px;
+        margin-left: 135px;
+        @include tablet { 
+            width: 332px;
+            height: 412px;
+            margin-top: 73px;
+            margin-left: 107px;
+        }
+        @include mobile {
+            width: 311px;
+            height: 356px;
+            margin-top: 0;
+            margin-left: 32px;
+        }
+        .display1 {
+            font-size: $display1-size;
+            color: $dark-color;
+            font-weight: bolder;
+            @include tablet {
+                font-size: $d1-tablet-size;
             }
-            .description-text {
-                line-height: $paragraph-text-spacing;
-            }
-            .recent-work-button {
-                margin-bottom: 1rem;
+            @include mobile {
+                font-size: $d1-mobile-size;
             }
         }
-        .scroll-down-container{
-            display: flex;
-            align-items: flex-end;
-            height: auto;
-            .scroll-down-arrow {
-                margin-right: 1rem;
+        .hero-description {
+            line-height: $paragraph-text-spacing;
+            padding-right: 90px;
+            @include tablet {
+                font-size: $mobile-size;
+                padding-right: 20px;
+            }
+            @include mobile {
+                padding-right: 0px;
             }
         }
     }
-    .hero-img-container {
-        margin-left: -10vw;
-        margin-top: -2.5vh;
-        height: auto;
-        .hero-img {
-            // width: auto;
-            height: 95%;
+
+    .scroll-wrapper {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 639px;
+        margin-right: 107px;
+        width: 150px;
+        height: 44px;
+        @include tablet {
+            margin-top: 451px;
+        }
+        .scroll-arrow {
+            width: 40px;
+            height: 40px;
+            margin-right: 16px;
+            @include mobile {
+                display: none;
+            }
+        }
+        .scroll-desktop {
+            font-weight: 600;
+            @include tablet {
+                display: none;
+            }
+        }
+        .scroll-tablet {
+            display: none;
+            @include tablet {
+                display: inline;
+            }
+            @include mobile {
+                display: none;
+            }
+        }
+    }
+}
+.hero-bg {
+    position: absolute;
+    top: 1px;
+    left: 321px;
+    width: 642px;
+    height: 819px;
+    z-index: -2;
+    @include tablet {
+        left: 228px;
+        width: 457px;
+        height: 583px; 
+    }
+    @include mobile {
+        top: -15px;
+        left: 176px;
+        width: 456px;
+        height: 582px;
+    }
+}
+.hero-img {
+    position: absolute;
+    top: 222px;
+    left: 406px;
+    @include tablet {
+        top: 158px;
+        left: 368px;
+    }
+    @include mobile {
+        top: 449px;
+        left: 37px;
+    }
+    .hero-pc {
+        width: 570px;
+        height: 722px;
+        @include tablet {
+            width: 565px;
+            height: 513px;
+        }
+        @include mobile {
+            width: 405px;
+            height: 363px;
         }
     }
 }

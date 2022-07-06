@@ -1,18 +1,21 @@
 // Fonts
-$font: -apple-system, BlinkMacSystemFont, sans-serif;
+$font: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
 
 // Fonts-size
-$body-font-size: 18px;
-$navbar-font-size: 24px;
-$button-font-size: 24px;
-$display1-font-size: 84px;
-$h2-titles-font-size: 64px;
+$body-size: 18px;
+$mobile-size: 16px;
+$display1-size: 84px;
+$d1-tablet-size: 64px;
+$d1-mobile-size: 48px;
+$h2-titles-size: 64px;
+$h2-mobile-size: 48px;
 
 // Font-colors
-$body-color: #606060;
+$primary-color: #606060;
+$secondary-color: #FFF;
 $active-color: #5468E7;
 $deactive-color: #ADADAD;
-$d1-color: #232340;
+$dark-color: #232340;
 
 // Text-spacing
 $paragraph-text-spacing: 2;
@@ -22,11 +25,10 @@ $primary-button-color: #232340;
 $secondary-button-color: #FFF;
 $terciary-button-color: #5468E7;
 
-//$ Button-border-radius
-$primary-button-border-radius: 8px;
-
-// Sections-lateral-margins
-$main-section-margin: 12vw;
-
 // Background-colors
 $primary-bg-color: #232340;
+
+
+// Media-queries-breakpoints
+$tablet-breakpoint: 1025px;
+$mobile-breakpoint: 376px;

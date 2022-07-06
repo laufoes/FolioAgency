@@ -1,8 +1,43 @@
 @import '../abstract/variables';
+@import '../components/media-queries';
 
 html, body {
     font-family: $font;
-    font-size: $body-font-size;
-    color: $body-color;
+    font-size: $body-size;
+    color: $primary-color;
+    font-weight: 400;
     margin: 0 0;
+    width: 1440px;
+    @include tablet {
+        font-size: $mobile-size;
+        width: 1024px;
+    }
+    @include mobile {
+        font-size: $mobile-size;
+        width: 375px;
+    }
+    h2 {
+        font-size: $h2-titles-size;
+        @include tablet {
+            font-size: $h2-mobile-size;
+        }
+        @include mobile {
+            font-size: $h2-mobile-size;
+        }
+    }
+    h1 {
+        font-size: $display1-size;
+        @include tablet {
+            font-size: $d1-mobile-size;
+        }
+        @include mobile {
+            font-size: $h2-mobile-size;
+        }
+    }
+    a {
+        display: pointer;
+    }
+    img {
+        width: 100%;
+    }
 }
