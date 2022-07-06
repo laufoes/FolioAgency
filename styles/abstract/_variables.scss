@@ -3,12 +3,15 @@ $font: 'SF Pro Display', -apple-system, BlinkMacSystemFont, sans-serif;
 
 // Fonts-size
 $body-size: 18px;
-$mobile-size: 16px;
+$tablet-size: 16px;
+$mobile-size: 14px;
 $display1-size: 84px;
 $d1-tablet-size: 64px;
 $d1-mobile-size: 48px;
 $h2-titles-size: 64px;
 $h2-mobile-size: 48px;
+$h4-mobile-size: 40px;
+$h6-mobile-size: 24px;
 
 // Font-colors
 $primary-color: #606060;
@@ -18,7 +21,7 @@ $deactive-color: #ADADAD;
 $dark-color: #232340;
 
 // Text-spacing
-$paragraph-text-spacing: 2;
+$paragraph-text-spacing: 28px;
 
 // Button-colors
 $primary-button-color: #232340;

@@ -1,16 +1,16 @@
 @import '../abstract/variables';
+@import './media-queries';
 
 .contact-button {
-    width: 180px;
-    height: 64px;
     background-color: $primary-button-color;
     color: $secondary-button-color;
     font-size: $body-size; 
     font-size: $body-size;
     border: none;
     border-radius: 8px;
-    display: pointer;
     transition: 400ms;
+    width: 180px;
+    height: 64px;
     cursor: pointer;
     &:hover {
         transform: scale(1.05);
@@ -22,19 +22,23 @@
         height: 56px;
     }
     @include mobile {
-        display: none;
+        font-size: $mobile-size;
+        font-weight: 200;
+        width: 160px;
+        height: 56px;
     }
 }
 
-.recent-work-button {
+.secondary-button {
     background-color: $terciary-button-color;
     color: $secondary-button-color;
     font-size: $body-size; 
     font-size: $body-size;
     border: none;
     border-radius: 8px;
-    display: pointer;
     transition: 400ms;
+    width: 180px;
+    height: 64px;
     cursor: pointer;
     &:hover {
         transform: scale(1.05);

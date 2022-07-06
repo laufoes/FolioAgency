@@ -75,6 +75,11 @@
                 }
             }
         }
+        .navbar-button {
+            @include mobile {
+                display: none;
+            }
+        }
         .nav-mobile {
             display: none;
             @include tablet {

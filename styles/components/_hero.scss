@@ -20,19 +20,19 @@
         justify-content: space-between;
         width: 467px;
         height: 548px;
-        margin-top: 110px;
-        margin-left: 135px;
+        padding-top: 110px;
+        padding-left: 135px;
         @include tablet { 
             width: 332px;
             height: 412px;
-            margin-top: 73px;
-            margin-left: 107px;
+            padding-top: 73px;
+            padding-left: 107px;
         }
         @include mobile {
             width: 311px;
             height: 356px;
-            margin-top: 0;
-            margin-left: 32px;
+            padding-top: 0;
+            padding-left: 32px;
         }
         .display1 {
             font-size: $display1-size;
@@ -49,7 +49,7 @@
             line-height: $paragraph-text-spacing;
             padding-right: 90px;
             @include tablet {
-                font-size: $mobile-size;
+                font-size: $tablet-size;
                 padding-right: 20px;
             }
             @include mobile {
@@ -65,8 +65,8 @@
         align-items: center;
         margin-top: 639px;
         margin-right: 107px;
-        width: 150px;
-        height: 44px;
+        width: 158px;
+        height: 48px;
         @include tablet {
             margin-top: 451px;
         }
@@ -127,7 +127,7 @@
         left: 37px;
     }
     .hero-pc {
-        width: 570px;
+        width: 924px;
         height: 722px;
         @include tablet {
             width: 565px;
@@ -136,6 +136,7 @@
         @include mobile {
             width: 405px;
             height: 363px;
+            overflow: hidden;
         }
     }
 }
