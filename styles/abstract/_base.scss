@@ -16,15 +16,6 @@ html, body {
         font-size: $mobile-size;
         width: 375px;
     }
-    h2 {
-        font-size: $h2-titles-size;
-        @include tablet {
-            font-size: $h2-mobile-size;
-        }
-        @include mobile {
-            font-size: $h2-mobile-size;
-        }
-    }
     h1 {
         font-size: $display1-size;
         @include tablet {
@@ -34,10 +25,36 @@ html, body {
             font-size: $h2-mobile-size;
         }
     }
+    h2 {
+        font-size: $h2-titles-size;
+        font-weight: 700;
+        @include tablet {
+            font-size: $h2-mobile-size;
+        }
+        @include mobile {
+            font-size: $h2-mobile-size;
+        }
+    }
+    h6 {
+        @include mobile {
+            font-size: $h6-mobile-size;
+            font-weight: 700;
+            line-height: 32px;
+        }
+    }
     a {
         cursor: pointer;
     }
+    p {
+        @include mobile {
+            line-height: 28px;
+        }
+    }
     img {
         width: 100%;
+    }
+    .active {
+        color: $active-color;
+        font-weight: 600;
     }
 }

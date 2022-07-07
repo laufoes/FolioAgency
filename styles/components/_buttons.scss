@@ -5,7 +5,6 @@
     background-color: $dark-color;
     color: $secondary-color;
     font-size: $body-size; 
-    font-size: $body-size;
     border: none;
     border-radius: 8px;
     transition: 400ms;
@@ -14,6 +13,8 @@
     cursor: pointer;
     &:hover {
         transform: scale(1.05);
+        background-color: $secondary-color;
+        color: $dark-color;
     }
     @include tablet {
         font-size: $mobile-size;
@@ -42,6 +43,8 @@
     cursor: pointer;
     &:hover {
         transform: scale(1.05);
+        background-color: $secondary-color;
+        color: $active-color;
     }
     @include tablet {
         font-size: $mobile-size;
@@ -54,5 +57,23 @@
         font-weight: 200;
         width: 160px;
         height: 56px;
+    }
+}
+
+.terciary-button {
+    background-color: #908CFF;
+    color: $secondary-color;
+    font-size: 9px;
+    font-weight: 600;
+    border: none;
+    border-radius: 14px;
+    transition: 400ms;
+    width: 118px;
+    height: 25px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+        background-color: $secondary-color;
+        color: #908CFF;
     }
 }

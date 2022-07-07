@@ -18,19 +18,6 @@ html, body {
     width: 375px;
   }
 }
-html h2, body h2 {
-  font-size: 64px;
-}
-@media screen and (max-width: 1025px) {
-  html h2, body h2 {
-    font-size: 48px;
-  }
-}
-@media screen and (max-width: 376px) {
-  html h2, body h2 {
-    font-size: 48px;
-  }
-}
 html h1, body h1 {
   font-size: 84px;
 }
@@ -44,17 +31,46 @@ html h1, body h1 {
     font-size: 48px;
   }
 }
+html h2, body h2 {
+  font-size: 64px;
+  font-weight: 700;
+}
+@media screen and (max-width: 1025px) {
+  html h2, body h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 376px) {
+  html h2, body h2 {
+    font-size: 48px;
+  }
+}
+@media screen and (max-width: 376px) {
+  html h6, body h6 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
 html a, body a {
   cursor: pointer;
 }
+@media screen and (max-width: 376px) {
+  html p, body p {
+    line-height: 28px;
+  }
+}
 html img, body img {
   width: 100%;
+}
+html .active, body .active {
+  color: #5468E7;
+  font-weight: 600;
 }
 
 .primary-button {
   background-color: #232340;
   color: #FFF;
-  font-size: 18px;
   font-size: 18px;
   border: none;
   border-radius: 8px;
@@ -65,6 +81,8 @@ html img, body img {
 }
 .primary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
@@ -97,6 +115,8 @@ html img, body img {
 }
 .secondary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
@@ -113,6 +133,24 @@ html img, body img {
     width: 160px;
     height: 56px;
   }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
 }
 
 .notification {
@@ -269,7 +307,6 @@ html img, body img {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
-  font-size: 18px;
   border: none;
   border-radius: 8px;
   transition: 400ms;
@@ -279,6 +316,8 @@ html img, body img {
 }
 .primary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
@@ -311,6 +350,8 @@ html img, body img {
 }
 .secondary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
@@ -327,6 +368,24 @@ html img, body img {
     width: 160px;
     height: 56px;
   }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
 }
 
 .notification {
@@ -374,7 +433,6 @@ html img, body img {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
-  font-size: 18px;
   border: none;
   border-radius: 8px;
   transition: 400ms;
@@ -384,6 +442,8 @@ html img, body img {
 }
 .primary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
@@ -416,6 +476,8 @@ html img, body img {
 }
 .secondary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
@@ -432,6 +494,24 @@ html img, body img {
     width: 160px;
     height: 56px;
   }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
 }
 
 .hero-container {
@@ -616,7 +696,6 @@ html img, body img {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
-  font-size: 18px;
   border: none;
   border-radius: 8px;
   transition: 400ms;
@@ -626,6 +705,8 @@ html img, body img {
 }
 .primary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
@@ -658,6 +739,8 @@ html img, body img {
 }
 .secondary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
@@ -674,6 +757,24 @@ html img, body img {
     width: 160px;
     height: 56px;
   }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
 }
 
 .whoweare-container {
@@ -842,10 +943,14 @@ html img, body img {
   }
 }
 
+.arrow-outline {
+  width: 48px;
+  height: 48px;
+}
+
 .primary-button {
   background-color: #232340;
   color: #FFF;
-  font-size: 18px;
   font-size: 18px;
   border: none;
   border-radius: 8px;
@@ -856,6 +961,8 @@ html img, body img {
 }
 .primary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
@@ -888,6 +995,8 @@ html img, body img {
 }
 .secondary-button:hover {
   transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
@@ -904,6 +1013,24 @@ html img, body img {
     width: 160px;
     height: 56px;
   }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
 }
 
 .whatwedo-container {
@@ -1117,4 +1244,218 @@ html img, body img {
     width: 69px;
     height: 12px;
   }
+}
+
+.primary-button {
+  background-color: #232340;
+  color: #FFF;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 180px;
+  height: 64px;
+  cursor: pointer;
+}
+.primary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
+}
+@media screen and (max-width: 1025px) {
+  .primary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .primary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+
+.secondary-button {
+  background-color: #5468E7;
+  color: #FFF;
+  font-size: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 180px;
+  height: 64px;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
+}
+@media screen and (max-width: 1025px) {
+  .secondary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .secondary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
+.partnerships-container {
+  display: flex;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 375px;
+    height: 3612px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .title-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 311px;
+    height: 238px;
+    margin-left: 32px;
+    margin-top: 128px;
+  }
+}
+.partnerships-container .title-content .partnerships-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .title-content .partnerships-subtitle {
+    width: 161px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .title-content .partnerships-subtitle .subtitle-logo {
+    display: none;
+  }
+}
+.partnerships-container .title-content .partnerships-title {
+  color: #232340;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .title-content .partnerships-title {
+    width: 255px;
+    height: 96px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .title-content .partnerships-description {
+    width: 311px;
+    font-size: 16px;
+  }
+}
+.partnerships-container .cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 32px;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .cards-wrapper {
+    flex-direction: column;
+    width: 313px;
+    height: 3048px;
+  }
+}
+.partnerships-container .cards-wrapper .partnerships-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .cards-wrapper .partnerships-card {
+    flex-direction: column;
+    width: 312px;
+    height: 584px;
+  }
+}
+.partnerships-container .cards-wrapper .partnerships-card .featured-img {
+  position: relative;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .cards-wrapper .partnerships-card .featured-img {
+    border: none;
+    border-radius: 17px;
+    width: 311px;
+    height: 356px;
+  }
+}
+.partnerships-container .cards-wrapper .partnerships-card .featured-img .featured-button {
+  position: absolute;
+  top: 303px;
+  left: 24px;
+  z-index: 2;
+}
+.partnerships-container .cards-wrapper .partnerships-card .first-img {
+  background-color: #FFBA79;
+}
+.partnerships-container .cards-wrapper .partnerships-card .card-title {
+  color: #232340;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .cards-wrapper .partnerships-card .card-description {
+    padding-right: 84px;
+  }
+}
+.partnerships-container .cards-wrapper .partnerships-card .second-img {
+  background-color: #E8BEFF;
+}
+.partnerships-container .cards-wrapper .partnerships-card .third-img {
+  background-color: #FFCE79;
+}
+.partnerships-container .cards-wrapper .partnerships-card .fourth-img {
+  background-color: #D1ECFD;
+}
+.partnerships-container .cards-wrapper .partnerships-card .fifth-img {
+  background-color: #FFBA79;
+}
+.partnerships-container .cards-wrapper .partnerships-button {
+  display: block;
+}
+@media screen and (max-width: 376px) {
+  .partnerships-container .cards-wrapper .partnerships-button {
+    width: 313px;
+    height: 46px;
+  }
+}
+.partnerships-container .cards-wrapper .partnerships-button .secondary-button {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
