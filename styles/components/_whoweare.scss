@@ -1,6 +1,6 @@
 @import '../abstract/variables';
-@import './media-queries';
-@import './button';
+@import '../abstract/media-queries';
+@import './buttons';
 
 .whoweare-container{
     display: flex;

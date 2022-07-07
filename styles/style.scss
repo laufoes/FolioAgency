@@ -1,6 +1,8 @@
 @import './abstract/base';
+@import './abstract/media-queries';
 @import './components/navbar';
-@import './components/button';
+@import './components/buttons';
+@import './components/notifications';
 @import './components/hero';
-@import './components/aboutus';
+@import './components/whoweare';
 @import './components/whatwedo';

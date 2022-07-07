@@ -51,7 +51,7 @@ html img, body img {
   width: 100%;
 }
 
-.contact-button {
+.primary-button {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
@@ -63,11 +63,11 @@ html img, body img {
   height: 64px;
   cursor: pointer;
 }
-.contact-button:hover {
+.primary-button:hover {
   transform: scale(1.05);
 }
 @media screen and (max-width: 1025px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -75,7 +75,7 @@ html img, body img {
   }
 }
 @media screen and (max-width: 376px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -112,6 +112,47 @@ html img, body img {
     font-weight: 200;
     width: 160px;
     height: 56px;
+  }
+}
+
+.notification {
+  position: absolute;
+  top: 72px;
+  left: 924px;
+  height: 24px;
+  width: 24px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#3A8FFF, #0837AE);
+}
+@media screen and (max-width: 1025px) {
+  .notification {
+    top: 46px;
+    left: 677px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .notification {
+    display: none;
+  }
+}
+.notification .notification-text {
+  position: relative;
+  height: 18px;
+  width: 9px;
+  left: 7px;
+  top: 5px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 376px) {
+  .notification .notification-text {
+    display: none;
   }
 }
 
@@ -223,48 +264,8 @@ html img, body img {
     display: inline;
   }
 }
-.nav-container .nav-notification {
-  position: absolute;
-  top: 72px;
-  left: 924px;
-  height: 24px;
-  width: 24px;
-  border: none;
-  border-radius: 50%;
-  background: linear-gradient(#3A8FFF, #0837AE);
-}
-@media screen and (max-width: 1025px) {
-  .nav-container .nav-notification {
-    top: 46px;
-    left: 677px;
-  }
-}
-@media screen and (max-width: 376px) {
-  .nav-container .nav-notification {
-    display: none;
-  }
-}
-.nav-container .nav-notification-text {
-  position: relative;
-  height: 18px;
-  width: 9px;
-  left: 7px;
-  top: 5px;
-  font-family: "SF Pro Text";
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 14px;
-  line-height: 18px;
-  text-align: center;
-  color: #FFFFFF;
-}
-@media screen and (max-width: 376px) {
-  .nav-container .nav-notification-text {
-    display: none;
-  }
-}
 
-.contact-button {
+.primary-button {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
@@ -276,11 +277,11 @@ html img, body img {
   height: 64px;
   cursor: pointer;
 }
-.contact-button:hover {
+.primary-button:hover {
   transform: scale(1.05);
 }
 @media screen and (max-width: 1025px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -288,7 +289,7 @@ html img, body img {
   }
 }
 @media screen and (max-width: 376px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -328,7 +329,48 @@ html img, body img {
   }
 }
 
-.contact-button {
+.notification {
+  position: absolute;
+  top: 72px;
+  left: 924px;
+  height: 24px;
+  width: 24px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#3A8FFF, #0837AE);
+}
+@media screen and (max-width: 1025px) {
+  .notification {
+    top: 46px;
+    left: 677px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .notification {
+    display: none;
+  }
+}
+.notification .notification-text {
+  position: relative;
+  height: 18px;
+  width: 9px;
+  left: 7px;
+  top: 5px;
+  font-family: "SF Pro Text";
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 376px) {
+  .notification .notification-text {
+    display: none;
+  }
+}
+
+.primary-button {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
@@ -340,11 +382,11 @@ html img, body img {
   height: 64px;
   cursor: pointer;
 }
-.contact-button:hover {
+.primary-button:hover {
   transform: scale(1.05);
 }
 @media screen and (max-width: 1025px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -352,7 +394,7 @@ html img, body img {
   }
 }
 @media screen and (max-width: 376px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -570,7 +612,7 @@ html img, body img {
   }
 }
 
-.contact-button {
+.primary-button {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
@@ -582,11 +624,11 @@ html img, body img {
   height: 64px;
   cursor: pointer;
 }
-.contact-button:hover {
+.primary-button:hover {
   transform: scale(1.05);
 }
 @media screen and (max-width: 1025px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -594,7 +636,7 @@ html img, body img {
   }
 }
 @media screen and (max-width: 376px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -789,7 +831,18 @@ html img, body img {
   }
 }
 
-.contact-button {
+@media screen and (max-width: 376px) {
+  .arrows-nav {
+    width: 144px;
+    height: 48px;
+  }
+  .arrows-nav img {
+    height: 48px;
+    width: auto;
+  }
+}
+
+.primary-button {
   background-color: #232340;
   color: #FFF;
   font-size: 18px;
@@ -801,11 +854,11 @@ html img, body img {
   height: 64px;
   cursor: pointer;
 }
-.contact-button:hover {
+.primary-button:hover {
   transform: scale(1.05);
 }
 @media screen and (max-width: 1025px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -813,7 +866,7 @@ html img, body img {
   }
 }
 @media screen and (max-width: 376px) {
-  .contact-button {
+  .primary-button {
     font-size: 14px;
     font-weight: 200;
     width: 160px;
@@ -928,16 +981,6 @@ html img, body img {
     height: 192px;
     font-size: 40px;
     color: #232340;
-  }
-}
-@media screen and (max-width: 376px) {
-  .whatwedo-container .whatwedo-wrapper .arrows-nav {
-    width: 144px;
-    height: 48px;
-  }
-  .whatwedo-container .whatwedo-wrapper .arrows-nav img {
-    height: 48px;
-    width: auto;
   }
 }
 @media screen and (max-width: 376px) {

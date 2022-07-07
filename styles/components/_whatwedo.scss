@@ -1,6 +1,7 @@
 @import '../abstract/variables';
-@import './media-queries';
-@import './button';
+@import '../abstract/media-queries';
+@import './arrows';
+@import './buttons';
 
 .whatwedo-container {
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
@@ -65,16 +66,6 @@
                 height: 192px;
                 font-size: $h4-mobile-size;
                 color: $dark-color;
-            }
-        }
-        .arrows-nav {
-            @include mobile {
-                width: 144px;
-                height: 48px;
-                img {
-                    height: 48px;
-                    width: auto;
-                }
             }
         }
     }

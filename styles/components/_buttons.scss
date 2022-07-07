@@ -1,9 +1,9 @@
 @import '../abstract/variables';
-@import './media-queries';
+@import '../abstract/media-queries';
 
-.contact-button {
-    background-color: $primary-button-color;
-    color: $secondary-button-color;
+.primary-button {
+    background-color: $dark-color;
+    color: $secondary-color;
     font-size: $body-size; 
     font-size: $body-size;
     border: none;
@@ -30,8 +30,8 @@
 }
 
 .secondary-button {
-    background-color: $terciary-button-color;
-    color: $secondary-button-color;
+    background-color: $active-color;
+    color: $secondary-color;
     font-size: $body-size; 
     font-size: $body-size;
     border: none;

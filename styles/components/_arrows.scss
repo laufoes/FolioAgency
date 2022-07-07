@@ -1,0 +1,13 @@
+@import '../abstract/variables';
+@import '../abstract/media-queries';
+
+.arrows-nav {
+    @include mobile {
+        width: 144px;
+        height: 48px;
+        img {
+            height: 48px;
+            width: auto;
+        }
+    }
+}
