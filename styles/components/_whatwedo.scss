@@ -39,11 +39,11 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 227px;
+            width: 311px;
             height: 304px;
             padding-top: 128px;
             // ajustar caso nao consiga deixar a navbar sticky
-            padding-left: 32px;
+            margin: 0 auto;
             margin-bottom: 56px;
             z-index: 0;
         }
@@ -148,6 +148,7 @@
         .achievement-title {
             @include mobile {
                 font-size: $h6-mobile-size;
+                color: $dark-color;
                 line-height: 32px;
                 font-weight: 600;
             }
@@ -157,15 +158,17 @@
             flex-direction: column;
             justify-content: center;
             @include mobile {
-                width: 194px;
+                width: 200px;
                 height: 191px;
             }
             .project-counter {
                 color: $active-color;
                 font-size: 140px;
             }
-            h6 {
+            .counter-title {
                 font-weight: 600;
+                color: $dark-color;
+                font-size: 18px;
             }
         }
     }

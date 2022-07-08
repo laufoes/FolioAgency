@@ -1,8 +1,18 @@
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("../../fonts/SFPRODISPLAYREGULAR.OTF");
+}
+@font-face {
+  font-family: "SF Pro Display";
+  font-weight: bold;
+  src: url("../../fonts/SFPRODISPLAYBOLD.OTF");
+}
 html, body {
   font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 18px;
   color: #606060;
   font-weight: 400;
+  text-align: left;
   margin: 0 0;
   width: 1440px;
 }
@@ -153,6 +163,24 @@ html .active, body .active {
   color: #908CFF;
 }
 
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
 .notification {
   position: absolute;
   top: 72px;
@@ -232,7 +260,8 @@ html .active, body .active {
     width: 311px;
     height: 32px;
     padding-top: 52px;
-    padding-left: 32px;
+    padding-left: 0px;
+    margin: 0 auto;
   }
 }
 .nav-container .nav-wrapper .nav-logo {
@@ -299,7 +328,52 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .nav-container .nav-wrapper .nav-mobile {
-    display: inline;
+    display: block;
+  }
+}
+.nav-container .nav-wrapper .nav-mobile #toggle {
+  display: none;
+}
+.nav-container .nav-wrapper .nav-mobile .menu-btn {
+  z-index: 1;
+}
+.nav-container .nav-wrapper .nav-mobile .menu-btn .burger-menu {
+  display: none;
+}
+@media screen and (max-width: 376px) {
+  .nav-container .nav-wrapper .nav-mobile .menu-btn .burger-menu {
+    display: block;
+    border-top: 2px solid transparent;
+    width: 32px;
+    height: 12px;
+    cursor: pointer;
+  }
+  .nav-container .nav-wrapper .nav-mobile .menu-btn .burger-menu:before {
+    content: "";
+    display: block;
+    background: black;
+    width: 32px;
+    height: 2px;
+    margin-top: -2px;
+    transition: 3s;
+    position: relative;
+  }
+  .nav-container .nav-wrapper .nav-mobile .menu-btn .burger-menu:after {
+    content: "";
+    display: block;
+    background: black;
+    width: 32px;
+    height: 2px;
+    margin-top: 10px;
+    transition: 3s;
+    position: relative;
+  }
+  .nav-container .nav-wrapper .nav-mobile .menu-btn .burger-menu:active:before {
+    transform: rotate(45deg);
+  }
+  .nav-container .nav-wrapper .nav-mobile .menu-btn .burger-menu:active:after {
+    transform: rotate(-45deg);
+    top: -12px;
   }
 }
 
@@ -383,6 +457,24 @@ html .active, body .active {
   cursor: pointer;
 }
 .terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
   transform: scale(1.05);
   background-color: #FFF;
   color: #908CFF;
@@ -514,6 +606,24 @@ html .active, body .active {
   color: #908CFF;
 }
 
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
 .hero-container {
   width: 1440px;
   height: 896px;
@@ -538,7 +648,7 @@ html .active, body .active {
   width: 467px;
   height: 548px;
   padding-top: 110px;
-  padding-left: 135px;
+  background-color: red;
 }
 @media screen and (max-width: 1025px) {
   .hero-container .hero-wrapper {
@@ -553,7 +663,8 @@ html .active, body .active {
     width: 311px;
     height: 356px;
     padding-top: 0;
-    padding-left: 32px;
+    padding-left: 0;
+    margin: 0 auto;
   }
 }
 .hero-container .hero-wrapper .display1 {
@@ -777,6 +888,24 @@ html .active, body .active {
   color: #908CFF;
 }
 
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
 .whoweare-container {
   display: flex;
   flex-direction: column;
@@ -801,7 +930,7 @@ html .active, body .active {
     width: 310px;
     height: 314px;
     margin-top: 64px;
-    margin-left: 32px;
+    margin: 0 auto;
   }
 }
 .whoweare-container .whoweare-wrapper .subtitle {
@@ -1033,6 +1162,24 @@ html .active, body .active {
   color: #908CFF;
 }
 
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
 .whatwedo-container {
   position: relative;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
@@ -1074,10 +1221,10 @@ html .active, body .active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 227px;
+    width: 311px;
     height: 304px;
     padding-top: 128px;
-    padding-left: 32px;
+    margin: 0 auto;
     margin-bottom: 56px;
     z-index: 0;
   }
@@ -1193,6 +1340,7 @@ html .active, body .active {
 @media screen and (max-width: 376px) {
   .whatwedo-container .achievement-wrapper .achievement-title {
     font-size: 24px;
+    color: #232340;
     line-height: 32px;
     font-weight: 600;
   }
@@ -1204,7 +1352,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .whatwedo-container .achievement-wrapper .project-counter-wrapper {
-    width: 194px;
+    width: 200px;
     height: 191px;
   }
 }
@@ -1212,8 +1360,10 @@ html .active, body .active {
   color: #5468E7;
   font-size: 140px;
 }
-.whatwedo-container .achievement-wrapper .project-counter-wrapper h6 {
+.whatwedo-container .achievement-wrapper .project-counter-wrapper .counter-title {
   font-weight: 600;
+  color: #232340;
+  font-size: 18px;
 }
 .whatwedo-container .image-wrapper {
   display: flex;
@@ -1329,6 +1479,24 @@ html .active, body .active {
   cursor: pointer;
 }
 .terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
   transform: scale(1.05);
   background-color: #FFF;
   color: #908CFF;
@@ -1548,15 +1716,34 @@ html .active, body .active {
   color: #908CFF;
 }
 
+.cta-button {
+  background-color: #FFF;
+  color: #5468E7;
+  font-size: 16px;
+  font-weight: lighter;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 143px;
+  height: 46px;
+  cursor: pointer;
+}
+.cta-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
 .cta-container {
-  display: flex;
   color: #FFF;
-  margin-top: 56px;
+  padding-top: 56px;
+  padding-bottom: 48px;
 }
 @media screen and (max-width: 376px) {
   .cta-container {
     width: 375px;
-    height: 1105px;
+    height: 977px;
+    z-index: 0;
   }
 }
 .cta-container .cta-wrapper {
@@ -1565,21 +1752,45 @@ html .active, body .active {
 @media screen and (max-width: 376px) {
   .cta-container .cta-wrapper {
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     width: 312px;
-    height: 929px;
     background-color: #5468E7;
     border: none;
     border-radius: 32px;
-    margin-left: 32px;
-    padding-top: 60px;
-    padding-left: 32px;
+    padding-top: 64px;
+    margin: 0 auto;
+    z-index: 2;
   }
 }
 @media screen and (max-width: 376px) {
   .cta-container .cta-wrapper .cta-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 261px;
     height: 344px;
+    padding-left: 45px;
+    z-index: 2;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper .cta-content .cta-subtitle {
+    display: flex;
+    justify-content: space-between;
+    width: 138px;
+    height: 18px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper .cta-content .cta-title {
+    font-size: 48px;
+    weight: bold;
+    width: 261px;
+    height: 224px;
+    margin-bottom: 32px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
   }
 }
 @media screen and (max-width: 376px) {
@@ -1589,16 +1800,30 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .cta-container .cta-wrapper .cta-image .mobile {
-    margin-left: -33px;
+    margin-left: -30px;
+    width: 375px;
+    height: 521px;
   }
 }
-.cta-container .cta-wrapper .cta-subtitle {
+.cta-container .cta-bg-shape {
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 @media screen and (max-width: 376px) {
-  .cta-container .cta-wrapper .cta-subtitle {
-    width: 138px;
-    height: 18px;
+  .cta-container .cta-bg-shape .blue-desktop {
+    display: none;
   }
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-bg-shape .purple-desktop {
+    display: none;
+  }
+}
+.cta-container .cta-bg-shape .pink-mobile {
+  position: absolute;
+  z-index: 1;
+  bottom: -48px;
+  width: 260px;
+  height: 730px;
 }/*# sourceMappingURL=style.css.map */

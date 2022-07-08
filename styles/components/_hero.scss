@@ -21,7 +21,8 @@
         width: 467px;
         height: 548px;
         padding-top: 110px;
-        padding-left: 135px;
+        background-color: red;
+        // padding-left: 135px;
         @include tablet { 
             width: 332px;
             height: 412px;
@@ -32,7 +33,9 @@
             width: 311px;
             height: 356px;
             padding-top: 0;
-            padding-left: 32px;
+            padding-left: 0;
+            margin: 0 auto;
+           
         }
         .display1 {
             font-size: $display1-size;

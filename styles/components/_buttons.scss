@@ -77,3 +77,20 @@
         color: #908CFF;
     }
 }
+.cta-button {
+    background-color: $secondary-color;
+    color: $active-color;
+    font-size: 16px;
+    font-weight: lighter;
+    border: none;
+    border-radius: 8px;
+    transition: 400ms;
+    width: 143px;
+    height: 46px;
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+        background-color: $secondary-color;
+        color: #908CFF;
+    }
+}

@@ -1,11 +1,22 @@
 @import '../abstract/variables';
 @import '../abstract/media-queries';
 
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../../fonts/SFPRODISPLAYREGULAR.OTF');
+ }
+@font-face {
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    src: url('../../fonts/SFPRODISPLAYBOLD.OTF')
+}
+
 html, body {
     font-family: $font;
     font-size: $body-size;
     color: $primary-color;
     font-weight: 400;
+    text-align: left;
     margin: 0 0;
     width: 1440px;
     @include tablet {
