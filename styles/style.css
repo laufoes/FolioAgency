@@ -1034,6 +1034,7 @@ html .active, body .active {
 }
 
 .whatwedo-container {
+  position: relative;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
   z-index: -100;
 }
@@ -1046,25 +1047,26 @@ html .active, body .active {
 .whatwedo-container .whatwedo-bg1 {
   position: absolute;
   z-index: -1;
+  opacity: 0.25;
 }
 @media screen and (max-width: 376px) {
   .whatwedo-container .whatwedo-bg1 {
-    top: 932px;
-    left: 0;
-    width: 467px;
+    top: 902px;
+    width: 468px;
     height: 555px;
+    overflow: hidden;
   }
 }
 .whatwedo-container .whatwedo-bg2 {
   position: absolute;
+  z-index: -1;
+  opacity: 0.25;
 }
 @media screen and (max-width: 376px) {
   .whatwedo-container .whatwedo-bg2 {
     top: 1836px;
-    left: -53px;
-    width: 467px;
-    height: 555px;
-    z-index: -1;
+    left: -10px;
+    overflow: hidden;
   }
 }
 @media screen and (max-width: 376px) {
@@ -1077,6 +1079,7 @@ html .active, body .active {
     padding-top: 128px;
     padding-left: 32px;
     margin-bottom: 56px;
+    z-index: 0;
   }
 }
 .whatwedo-container .whatwedo-wrapper .subtitle {
@@ -1126,7 +1129,7 @@ html .active, body .active {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: white;
+  background-color: #FFF;
   color: #5468E7;
   cursor: pointer;
   transition: 400ms;
@@ -1458,4 +1461,144 @@ html .active, body .active {
 .partnerships-container .cards-wrapper .partnerships-button .secondary-button {
   width: 100%;
   height: 100%;
+}
+
+.primary-button {
+  background-color: #232340;
+  color: #FFF;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 180px;
+  height: 64px;
+  cursor: pointer;
+}
+.primary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #232340;
+}
+@media screen and (max-width: 1025px) {
+  .primary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .primary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+
+.secondary-button {
+  background-color: #5468E7;
+  color: #FFF;
+  font-size: 18px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  transition: 400ms;
+  width: 180px;
+  height: 64px;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #5468E7;
+}
+@media screen and (max-width: 1025px) {
+  .secondary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .secondary-button {
+    font-size: 14px;
+    font-weight: 200;
+    width: 160px;
+    height: 56px;
+  }
+}
+
+.terciary-button {
+  background-color: #908CFF;
+  color: #FFF;
+  font-size: 9px;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  transition: 400ms;
+  width: 118px;
+  height: 25px;
+  cursor: pointer;
+}
+.terciary-button:hover {
+  transform: scale(1.05);
+  background-color: #FFF;
+  color: #908CFF;
+}
+
+.cta-container {
+  display: flex;
+  color: #FFF;
+  margin-top: 56px;
+}
+@media screen and (max-width: 376px) {
+  .cta-container {
+    width: 375px;
+    height: 1105px;
+  }
+}
+.cta-container .cta-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 312px;
+    height: 929px;
+    background-color: #5468E7;
+    border: none;
+    border-radius: 32px;
+    margin-left: 32px;
+    padding-top: 60px;
+    padding-left: 32px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper .cta-content {
+    width: 261px;
+    height: 344px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper .cta-image .desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper .cta-image .mobile {
+    margin-left: -33px;
+  }
+}
+.cta-container .cta-wrapper .cta-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 376px) {
+  .cta-container .cta-wrapper .cta-subtitle {
+    width: 138px;
+    height: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */

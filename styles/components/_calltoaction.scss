@@ -1,0 +1,55 @@
+@import '../abstract/variables';
+@import '../abstract/media-queries';
+@import './buttons';
+
+.cta-container {
+    display: flex;
+    color: $secondary-color;
+    margin-top: 56px;
+    @include mobile {
+        width: 375px;
+        height: 1105px;
+    }
+    .cta-wrapper {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            justify-content: flex-start;
+            width: 312px;
+            height: 929px;
+            background-color: $active-color;
+            border: none;
+            border-radius: 32px;
+            margin-left: 32px;
+            padding-top: 60px;
+            padding-left: 32px;
+        }
+        .cta-content {
+            @include mobile {
+                width: 261px;
+                height: 344px;
+            }
+        }
+        .cta-image {
+            .desktop {
+                @include mobile {
+                    display: none;
+                }
+            }   
+            .mobile {
+                @include mobile {
+                    margin-left: -33px;
+                }
+            }
+        }
+        .cta-subtitle {
+            display: flex;
+            justify-content: space-between;
+            @include mobile {
+                width: 138px;
+                height: 18px;
+
+            }
+        }
+    }
+}
