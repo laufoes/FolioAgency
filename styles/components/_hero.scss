@@ -105,6 +105,7 @@
     width: 642px;
     height: 819px;
     z-index: -2;
+    overflow: hidden;
     @include tablet {
         left: 228px;
         width: 457px;
@@ -115,6 +116,7 @@
         left: 176px;
         width: 456px;
         height: 582px;
+        overflow: hidden;
     }
 }
 .hero-img {
@@ -132,14 +134,15 @@
     .hero-pc {
         width: 924px;
         height: 722px;
+        overflow: hidden;
         @include tablet {
             width: 565px;
             height: 513px;
         }
         @include mobile {
+            display: block;
             width: 405px;
             height: 363px;
-            overflow: hidden;
         }
     }
 }

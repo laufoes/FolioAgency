@@ -5,7 +5,6 @@
 .cta-container {
     color: $secondary-color;
     padding-top: 56px;
-    padding-bottom: 48px;
     @include mobile {
         width: 375px;
         // height: 1105px; com o nav no topo
@@ -58,6 +57,7 @@
             }
         }
         .cta-image {
+            z-index: 2;
             .desktop {
                 @include mobile {
                     display: none;
@@ -76,6 +76,7 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
+        z-index: 0;
         .blue-desktop {
             @include mobile {
                 display: none;
@@ -88,7 +89,6 @@
         }
         .pink-mobile { 
             position: absolute;
-            z-index: 1;
             bottom: -48px;   
             width: 260px;
             height: 730px;

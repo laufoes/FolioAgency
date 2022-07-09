@@ -2,29 +2,24 @@
   font-family: "SF Pro Display";
   src: url("../../fonts/SFPRODISPLAYREGULAR.OTF");
 }
-@font-face {
-  font-family: "SF Pro Display";
-  font-weight: bold;
-  src: url("../../fonts/SFPRODISPLAYBOLD.OTF");
-}
 html, body {
   font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 18px;
   color: #606060;
-  font-weight: 400;
   text-align: left;
+  font-weight: 400;
   margin: 0 0;
   width: 1440px;
 }
 @media screen and (max-width: 1025px) {
   html, body {
-    font-size: 14px;
+    font-size: 16px;
     width: 1024px;
   }
 }
 @media screen and (max-width: 376px) {
   html, body {
-    font-size: 14px;
+    font-size: 16px;
     width: 375px;
   }
 }
@@ -65,6 +60,14 @@ html h2, body h2 {
 html a, body a {
   cursor: pointer;
 }
+html p, body p {
+  line-height: 32px;
+}
+@media screen and (max-width: 1025px) {
+  html p, body p {
+    line-height: 28px;
+  }
+}
 @media screen and (max-width: 376px) {
   html p, body p {
     line-height: 28px;
@@ -96,7 +99,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -104,7 +107,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -130,7 +133,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -138,7 +141,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -182,44 +185,25 @@ html .active, body .active {
 }
 
 .notification {
-  position: absolute;
-  top: 72px;
-  left: 924px;
+  position: relative;
   height: 24px;
   width: 24px;
   border: none;
   border-radius: 50%;
   background: linear-gradient(#3A8FFF, #0837AE);
 }
-@media screen and (max-width: 1025px) {
-  .notification {
-    top: 46px;
-    left: 677px;
-  }
-}
-@media screen and (max-width: 376px) {
-  .notification {
-    display: none;
-  }
-}
 .notification .notification-text {
-  position: relative;
+  position: absolute;
+  top: -2px;
+  left: 8px;
   height: 18px;
   width: 9px;
-  left: 7px;
-  top: 5px;
-  font-family: "SF Pro Text";
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
-}
-@media screen and (max-width: 376px) {
-  .notification .notification-text {
-    display: none;
-  }
 }
 
 .nav-container {
@@ -376,6 +360,25 @@ html .active, body .active {
     top: -12px;
   }
 }
+.nav-container .notification {
+  top: 72px;
+  left: 924px;
+}
+@media screen and (max-width: 1025px) {
+  .nav-container .notification {
+    top: 46px;
+    left: 677px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .nav-container .notification {
+    display: none;
+  }
+}
+.nav-container .notification .notification-text {
+  left: 7px;
+  top: 5px;
+}
 
 .primary-button {
   background-color: #232340;
@@ -395,7 +398,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -403,7 +406,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -429,7 +432,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -437,7 +440,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -481,44 +484,25 @@ html .active, body .active {
 }
 
 .notification {
-  position: absolute;
-  top: 72px;
-  left: 924px;
+  position: relative;
   height: 24px;
   width: 24px;
   border: none;
   border-radius: 50%;
   background: linear-gradient(#3A8FFF, #0837AE);
 }
-@media screen and (max-width: 1025px) {
-  .notification {
-    top: 46px;
-    left: 677px;
-  }
-}
-@media screen and (max-width: 376px) {
-  .notification {
-    display: none;
-  }
-}
 .notification .notification-text {
-  position: relative;
+  position: absolute;
+  top: -2px;
+  left: 8px;
   height: 18px;
   width: 9px;
-  left: 7px;
-  top: 5px;
-  font-family: "SF Pro Text";
   font-style: normal;
-  font-weight: lighter;
+  font-weight: 600;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   color: #FFFFFF;
-}
-@media screen and (max-width: 376px) {
-  .notification .notification-text {
-    display: none;
-  }
 }
 
 .primary-button {
@@ -539,7 +523,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -547,7 +531,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -573,7 +557,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -581,7 +565,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -751,6 +735,7 @@ html .active, body .active {
   width: 642px;
   height: 819px;
   z-index: -2;
+  overflow: hidden;
 }
 @media screen and (max-width: 1025px) {
   .hero-bg {
@@ -765,6 +750,7 @@ html .active, body .active {
     left: 176px;
     width: 456px;
     height: 582px;
+    overflow: hidden;
   }
 }
 
@@ -788,6 +774,7 @@ html .active, body .active {
 .hero-img .hero-pc {
   width: 924px;
   height: 722px;
+  overflow: hidden;
 }
 @media screen and (max-width: 1025px) {
   .hero-img .hero-pc {
@@ -797,9 +784,9 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .hero-img .hero-pc {
+    display: block;
     width: 405px;
     height: 363px;
-    overflow: hidden;
   }
 }
 
@@ -821,7 +808,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -829,7 +816,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -855,7 +842,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -863,7 +850,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1095,7 +1082,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1103,7 +1090,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1129,7 +1116,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1137,7 +1124,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1417,7 +1404,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1425,7 +1412,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1451,7 +1438,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1459,7 +1446,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1649,7 +1636,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1657,7 +1644,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .primary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1683,7 +1670,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 1025px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1691,7 +1678,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .secondary-button {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 200;
     width: 160px;
     height: 56px;
@@ -1737,7 +1724,6 @@ html .active, body .active {
 .cta-container {
   color: #FFF;
   padding-top: 56px;
-  padding-bottom: 48px;
 }
 @media screen and (max-width: 376px) {
   .cta-container {
@@ -1793,6 +1779,9 @@ html .active, body .active {
     letter-spacing: -0.5px;
   }
 }
+.cta-container .cta-wrapper .cta-image {
+  z-index: 2;
+}
 @media screen and (max-width: 376px) {
   .cta-container .cta-wrapper .cta-image .desktop {
     display: none;
@@ -1809,6 +1798,7 @@ html .active, body .active {
   position: relative;
   display: flex;
   justify-content: flex-end;
+  z-index: 0;
 }
 @media screen and (max-width: 376px) {
   .cta-container .cta-bg-shape .blue-desktop {
@@ -1822,8 +1812,206 @@ html .active, body .active {
 }
 .cta-container .cta-bg-shape .pink-mobile {
   position: absolute;
-  z-index: 1;
   bottom: -48px;
   width: 260px;
   height: 730px;
+}
+
+.notification {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  border: none;
+  border-radius: 50%;
+  background: linear-gradient(#3A8FFF, #0837AE);
+}
+.notification .notification-text {
+  position: absolute;
+  top: -2px;
+  left: 8px;
+  height: 18px;
+  width: 9px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.jobs-container {
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container {
+    width: 375px;
+    height: 1170px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-bg img {
+    position: absolute;
+    width: 457px;
+    height: 582px;
+    left: 162px;
+  }
+}
+.jobs-container .jobs-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 311px;
+    height: 1010px;
+    margin: 0 auto;
+    margin-top: 128px;
+  }
+}
+.jobs-container .jobs-wrapper .jobs-section {
+  display: flex;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper .jobs-section {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 311px;
+    height: 198px;
+  }
+}
+.jobs-container .jobs-wrapper .jobs-section .subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper .jobs-section .subtitle {
+    width: 128px;
+    height: 18px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper .jobs-section .subtitle img {
+    display: none;
+  }
+}
+.jobs-container .jobs-wrapper .jobs-section .subtitle .active {
+  color: #5468E7;
+  font-weight: 600;
+}
+.jobs-container .jobs-wrapper .jobs-section .jobs-title {
+  color: #232340;
+  font-size: 48px;
+  font-weight: 700;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper .jobs-section .jobs-title {
+    width: 227px;
+    height: 48px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper .jobs-section .jobs-description {
+    width: 311px;
+    height: 84px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .jobs-wrapper .jobs-section .scroll-wrapper {
+    display: none;
+  }
+}
+.jobs-container .cards-wrapper {
+  display: flex;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 311px;
+    height: 764px;
+  }
+}
+.jobs-container .cards-wrapper .jobs-cards {
+  display: flex;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .jobs-cards {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 311px;
+    height: 175px;
+    background-color: #FFF;
+    border-radius: 24px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper {
+    width: 187px;
+    height: 86px;
+    padding-left: 40px;
+    padding-top: 21px;
+  }
+}
+.jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title {
+  color: #232340;
+  font-weight: 700;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title {
+    position: relative;
+  }
+}
+.jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title .notification {
+  position: absolute;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title .notification {
+    top: 0px;
+    left: 187px;
+  }
+}
+.jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-content {
+  display: flex;
+  color: #606060;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-content {
+    flex-direction: column;
+  }
+}
+.jobs-container .cards-wrapper .jobs-cards .content-wrapper .cards-arrow {
+  width: 14px;
+  height: 10px;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .jobs-cards .card-active-img {
+    position: absolute;
+    left: 235px;
+    width: 150px;
+    height: 150px;
+  }
+}
+.jobs-container .cards-wrapper .card-active {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232340;
+  color: #8B8B8B;
+  font-size: 14px;
+}
+.jobs-container .cards-wrapper .card-active h6 {
+  color: #FFF;
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .card-active {
+    width: 414px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .jobs-container .cards-wrapper .card-active .content-wrapper {
+    width: 157px;
+  }
 }/*# sourceMappingURL=style.css.map */

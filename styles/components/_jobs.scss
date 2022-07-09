@@ -1,0 +1,161 @@
+@import '../abstract/variables';
+@import '../abstract/media-queries';
+@import '../components/notifications';
+
+.jobs-container {
+    position: relative;
+    // background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);  
+    overflow: hidden;  
+    @include mobile {
+        width: 375px;
+        height: 1170px;
+    }
+    .jobs-bg {
+        img {
+            @include mobile {
+                position: absolute;
+                width: 457px;
+                height: 582px;
+                left: 162px;
+            }
+        }
+    }
+    .jobs-wrapper {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            justify-content: space-between;
+            width: 311px;
+            height: 1010px;
+            margin: 0 auto;
+            margin-top: 128px;
+        }
+        .jobs-section {
+            display: flex;
+            @include mobile {
+                flex-direction: column;
+                justify-content: space-between;
+                width: 311px;
+                height: 198px;
+            }
+            .subtitle {
+                display: flex;
+                justify-content: space-between;
+                @include mobile {
+                    width: 128px;
+                    height: 18px;
+                }
+                img {
+                    @include mobile {
+                        display: none;
+                    }
+                }
+                .active {
+                    color: $active-color;
+                    font-weight: 600;
+                }
+            }
+            .jobs-title {
+                color: $dark-color;
+                font-size: $h2-mobile-size;
+                font-weight: 700;
+                @include mobile {
+                    width: 227px;
+                    height: 48px;
+                }
+            }
+            .jobs-description {
+                @include mobile {
+                    width: 311px;
+                    height: 84px;
+                }
+            }
+            .scroll-wrapper {
+                @include mobile {
+                    display: none;
+                }
+            }
+        }
+    }
+    .cards-wrapper {
+        display: flex;
+        @include mobile {
+            flex-direction: column;
+            justify-content: space-between;
+            width: 311px;
+            height: 764px;
+        }
+        .jobs-cards {
+            display: flex;
+            @include mobile {
+                position: relative;
+                flex-direction: column;
+                justify-content: space-around;
+                width: 311px;
+                height: 175px;
+                background-color: $secondary-color;
+                border-radius: 24px; 
+            }
+            .content-wrapper {
+                @include mobile {
+                    width: 187px;
+                    height: 86px;
+                    padding-left: 40px;
+                    padding-top: 21px;
+                }
+                .card-title {
+                    color: $dark-color;
+                    font-weight: 700;
+                    @include mobile {
+                        position: relative;
+                    }
+                    .notification {
+                        position: absolute;
+                        @include mobile {
+                            top: 0px;
+                            left: 187px;
+                        }
+                    }
+                }
+                .card-content {
+                    display: flex;
+                    color: $primary-color;
+                    @include mobile {
+                        flex-direction: column;
+                    }
+                }
+                .cards-arrow {
+                    width: 14px;
+                    height: 10px;
+                }
+            }
+            .card-active-img {
+                @include mobile {
+                    position: absolute;
+                    left: 235px;
+                    width: 150px;
+                    height: 150px;
+                } 
+            }
+        }
+        .card-active {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            background-color: $dark-color;
+            color: #8B8B8B;
+            font-size: 14px;
+            h6 {
+                color: $secondary-color;
+            }
+            @include mobile {
+                width: 414px;
+            }
+            .content-wrapper {
+                @include mobile {
+                    width: 157px;
+                }
+            }
+        }
+    }
+}

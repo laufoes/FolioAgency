@@ -177,4 +177,19 @@
             }
         }
     }
+    .notification {
+        top: 72px;
+        left: 924px;
+        @include tablet {
+            top: 46px;
+            left: 677px;
+        }
+        @include mobile {
+            display:none;
+        }
+        .notification-text {
+            left: 7px;
+            top: 5px;
+        }
+    }
 }
