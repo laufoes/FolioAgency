@@ -26,7 +26,7 @@
         height: 548px;
         padding-top: 110px;
         margin: 0 auto;
-        margin-top: 128px;
+        // margin-top: 128px;
         position: absolute;
         @include tablet { 
             width: 332px;
@@ -36,13 +36,12 @@
             margin-top: 128px;
         }
         @include mobile {
+            position: relative;
             width: 311px;
             height: 356px;
-            padding-top: 0;
+            padding-top: 128px;
             padding-left: 0;
             margin: 0 auto;
-            margin-top: 128px;
-           
         }
         .hero-title {
             @include tablet {

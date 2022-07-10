@@ -641,7 +641,6 @@ html .active, body .active {
   height: 548px;
   padding-top: 110px;
   margin: 0 auto;
-  margin-top: 128px;
   position: absolute;
 }
 @media screen and (max-width: 1025px) {
@@ -655,12 +654,12 @@ html .active, body .active {
 }
 @media screen and (max-width: 376px) {
   .hero-container .hero-wrapper {
+    position: relative;
     width: 311px;
     height: 356px;
-    padding-top: 0;
+    padding-top: 128px;
     padding-left: 0;
     margin: 0 auto;
-    margin-top: 128px;
   }
 }
 @media screen and (max-width: 1025px) {
