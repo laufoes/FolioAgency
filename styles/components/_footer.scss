@@ -3,6 +3,7 @@
 
 .footer-container {
     @include mobile {
+        overflow: hidden;
         width: 375px;
         height: 977px; //adicionar 128px que foram descontados da nav;
         // margin-top: 128px; caso a nav fixa funcione/separaçao de paginas

@@ -5,6 +5,7 @@
 
 .whatwedo-container {
     position: relative;
+    overflow: hidden;
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
     z-index: -100;
     @include mobile {
