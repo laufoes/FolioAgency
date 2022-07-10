@@ -77,7 +77,8 @@
         color: #908CFF;
     }
 }
-.cta-button {
+
+.fourth-button {
     background-color: $secondary-color;
     color: $active-color;
     font-size: 16px;
@@ -85,8 +86,6 @@
     border: none;
     border-radius: 8px;
     transition: 400ms;
-    width: 143px;
-    height: 46px;
     cursor: pointer;
     &:hover {
         transform: scale(1.05);

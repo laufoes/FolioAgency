@@ -4,7 +4,7 @@
 
 .cta-container {
     color: $secondary-color;
-    padding-top: 56px;
+    padding-top: 128px;
     @include mobile {
         width: 375px;
         // height: 1105px; com o nav no topo
@@ -55,6 +55,12 @@
                     letter-spacing: -0.5px;
                 }
             }
+            .fourth-button {
+                @include mobile {
+                    width: 143px;
+                    height: 46px;
+                }
+            }
         }
         .cta-image {
             z-index: 2;
@@ -89,7 +95,8 @@
         }
         .pink-mobile { 
             position: absolute;
-            bottom: -48px;   
+            bottom: -48px;  
+            right: 0px; 
             width: 260px;
             height: 730px;
         }
