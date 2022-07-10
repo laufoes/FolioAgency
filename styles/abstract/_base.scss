@@ -41,6 +41,13 @@ html, body {
             font-size: $h2-mobile-size;
         }
     }
+    h4 {
+        @include tablet {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;;
+        }
+    }
     h5 {
         @include mobile {
             font-weight: 600;

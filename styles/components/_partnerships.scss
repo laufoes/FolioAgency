@@ -50,6 +50,7 @@
     .cards-wrapper {
         display: flex;
         justify-content: space-between;
+        flex-direction: column;
         margin-left: 32px;
         @include mobile {
             flex-direction: column;
