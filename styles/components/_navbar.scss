@@ -58,8 +58,47 @@
                     height: 22px;
                 }
                 @include mobile  {
-                    display: none;
+                    position: absolute;
+                    left: 85%; 
                 }
+                li {
+                    @include mobile {
+                        display: none;
+                    }
+                }
+                .burger {
+                    display: none;
+                    @include mobile {
+                        display: block;
+                        width: 32px;
+                        height: 12px;
+                        background-color: white;
+                    }
+                    .line1 {
+                        @include mobile {
+                            width: 100%;
+                            height: 2px;
+                            background-color: black;
+                            transition: 300ms;
+                        }
+                    }
+                    .line2 {
+                        @include mobile {
+                            width: 100%;
+                            height: 2px;
+                            margin-top: 10px;
+                            background-color: black;
+                            transition: 300ms;
+                        }
+                    }
+                }
+
+
+
+
+
+
+
                 .menu-items {
                     display: flex;
                     justify-content: space-between;
@@ -70,12 +109,19 @@
                         font-size: $body-size;
                         font-weight: 600;
                         cursor: pointer;
+                        }
                     }
                     .nav-active {
                         color: $active-color;
+                        @include mobile {
+                            color: $secondary-color;
+                        }
                     }
                     .nav-deactive {
                         color: $deactive-color;
+                        @include mobile {
+                            color: $mobile-color;
+                        }
                     }
                 }
                 .notification {
@@ -94,58 +140,101 @@
                         top: -2px;
                     }
                 }
-            }
+            
             .navbar-button {
                 @include mobile {
                     display: none;
                 }   
             }
-            .menu-wrap {
-                display: none;
-                @include tablet {
-                    display: none;
-                }
-                @include mobile {
-                    display: block;
-                    .hamburguer {
-                        position: relative;
-                        margin-top: 20px;
-                        left: 10px;
-                        width: 32px;
-                        height: 12px;
-                        display: flex;
-                        transition: all 0.4s ease;
-                        z-index: 1;
-                        background-color: white;
-                        div {
-                            position: relative;
-                            margin-top: 10px;
-                            width: 100%;
-                            height: 2px;
-                            background-color: black;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            &:before {
-                                content: '';
-                                position: absolute;
-                                top: 0px;
-                                width: 32px;
-                                height: 2px;
-                                background-color: red;
-                            }
-                            &:after {
-                                content: '';
-                                position: absolute;
-                                top: 10px;
-                                width: 100%;
-                                height: 2px;
-                                background-color: red;
-                            }
-                        }
-                    }
-                }
-            }
+
+
+
+
+
+
+
+            // .menu-wrap {
+            //     display: none;
+            //     @include tablet {
+            //         display: none;
+            //     }
+            //     @include mobile {
+            //         display: block;
+            //         z-index: 10;
+            //     }
+            //     #toggle-menu {
+            //         margin-left: 5px;
+            //         width: 32px;
+            //         height: 12px;
+            //         cursor: pointer;
+            //         opacity: 0;
+            //         &:checked {
+            //             transform: rotate(45deg);
+            //             .hamburguer {
+            //                 div {
+            //                     &:before {
+            //                         transform: rotate(90deg);
+            //                     }
+            //                     &:after { 
+            //                         transform: rotate(90deg);
+            //                     }
+            //                 }
+            //             }
+            //         }
+            //         .checkbox-item {
+            //             width: 32px;
+            //             height: 32px;
+            //         }
+            //     }
+            //     .hamburguer {
+            //         position: relative;
+            //         margin-top: -30px;
+            //         left: 10px;
+            //         width: 32px;
+            //         height: 12px;
+            //         display: flex;
+            //         transition: 400ms;
+            //         z-index: 1;
+            //         background-color: white;
+            //         div {
+            //             position: relative;
+            //             margin-top: 10px;
+            //             width: 100%;
+            //             height: 2px;
+            //             background-color: black;
+            //             display: flex;
+            //             align-items: center;
+            //             justify-content: center;
+            //             &:before {
+            //                 content: '';
+            //                 position: absolute;
+            //                 top: 0px;
+            //                 width: 32px;
+            //                 height: 2px;
+            //                 background-color: red;
+            //             }
+            //             &:after {
+            //                 content: '';
+            //                 position: absolute;
+            //                 top: 10px;
+            //                 width: 100%;
+            //                 height: 2px;
+            //                 background-color: red;
+            //             }
+            //         }
+            //     }
+            //     .menu {
+            //         display: none;
+            //     }
+            // }
+
+
+
+
+
+
+
+
             
             // .nav-mobile {
             //     display: none;

@@ -143,6 +143,7 @@
                 display: none;
                 @include mobile {
                     display: block;
+                    margin-left: 54px;
                     width: 144px;
                     height: 48px;
                     .select-menu {
