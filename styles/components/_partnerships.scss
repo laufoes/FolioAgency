@@ -8,7 +8,7 @@
         flex-direction: column;
         justify-content: space-around;
         width: 375px;
-        height: 3612px;
+        height: 3484px;
     }
     .title-content {
         @include mobile {
@@ -18,7 +18,7 @@
             width: 311px;
             height: 238px;
             margin-left: 32px;
-            margin-top: 128px;
+            // margin-top: 128px;
         }
         .partnerships-subtitle {
             display: flex;

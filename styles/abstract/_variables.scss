@@ -28,5 +28,7 @@ $primary-bg-color: #232340;
 
 
 // Media-queries-breakpoints
-$tablet-breakpoint: 1025px;
-$mobile-breakpoint: 376px;
+$tablet-breakpoint-max: 2015px;
+$tablet-breakpoint-min: 481px;
+$mobile-breakpoint-max: 480px;
+$mobile-breakpoint-min: 320px;

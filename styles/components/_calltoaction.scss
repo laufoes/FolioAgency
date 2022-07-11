@@ -4,10 +4,9 @@
 
 .cta-container {
     color: $secondary-color;
-    padding-top: 128px;
+    padding-top: 56px;
     @include mobile {
         width: 375px;
-        // height: 1105px; com o nav no topo
         height: 977px;
         z-index: 0;
     }

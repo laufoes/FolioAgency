@@ -1,355 +1,135 @@
-    @import '../abstract/variables';
-    @import '../abstract/media-queries';
-    @import './buttons';
-    @import './notifications';
+@import '../abstract/variables';
+@import '../abstract/media-queries';
+@import './buttons';
+@import './notifications';
 
-    .nav-container {
+.nav-container {
+    width: 100%;
+    height: 128px;
+    @include tablet {
         width: 100%;
+        height: 96px;
+    }
+    @include mobile {
+        width: 375px;
         height: 128px;
+    }
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1296px;
+        height: 64px;
+        padding-top: 64px;
+        padding-left: 72px;
+        position: relative;
+        margin: 0 auto;
         @include tablet {
-            width: 100%;
-            height: 96px;
+            width: 924px;
+            height: 56px;
+            padding-top: 40px;
+            padding-left: 50px;
         }
         @include mobile {
-            width: 375px;
-            height: 128px;
-        }
-        .nav-wrapper {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 1296px;
-            height: 64px;
-            padding-top: 64px;
-            padding-left: 72px;
-            position: relative;
+            width: 311px;
+            height: 32px;
+            padding-top: 52px;
+            padding-left: 0px;
             margin: 0 auto;
+        }
+        .nav-logo {
+            width: 159px;
+            height: 40px;
             @include tablet {
-                width: 924px;
-                height: 56px;
-                padding-top: 40px;
-                padding-left: 50px;
+                width: 127px;
+                height: 32px;
             }
             @include mobile {
-                width: 311px;
+                width: 127px;
                 height: 32px;
-                padding-top: 52px;
-                padding-left: 0px;
-                margin: 0 auto;
             }
-            .nav-logo {
-                width: 159px;
-                height: 40px;
-                @include tablet {
-                    width: 127px;
-                    height: 32px;
-                }
+        }
+        .nav-menu {
+            width: 392px;
+            height: 24px;
+            @include tablet {
+                position: relative;
+                width: 346px;
+                height: 22px;
+            }
+            @include mobile  {
+                position: absolute;
+                left: 85%; 
+            }
+            li {
                 @include mobile {
-                    width: 127px;
-                    height: 32px;
+                    display: none;
                 }
             }
-            .nav-menu {
-                width: 392px;
-                height: 24px;
-                @include tablet {
-                    position: relative;
-                    width: 346px;
-                    height: 22px;
+            .burger {
+                display: none;
+                @include mobile {
+                    display: block;
+                    width: 32px;
+                    height: 12px;
+                    z-index: 2;
                 }
-                @include mobile  {
-                    position: absolute;
-                    left: 85%; 
+                a {
+                    cursor: pointer;
                 }
-                li {
-                    @include mobile {
-                        display: none;
-                    }
-                }
-                .burger {
-                    display: none;
-                    @include mobile {
-                        display: block;
-                        width: 32px;
-                        height: 12px;
-                        background-color: white;
-                    }
-                    .line1 {
-                        @include mobile {
-                            width: 100%;
-                            height: 2px;
-                            background-color: black;
-                            transition: 300ms;
-                        }
-                    }
-                    .line2 {
-                        @include mobile {
-                            width: 100%;
-                            height: 2px;
-                            margin-top: 10px;
-                            background-color: black;
-                            transition: 300ms;
-                        }
+            }
+            .menu-items {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: $primary-color;
+                    font-size: $body-size;
+                    font-weight: 600;
+                    cursor: pointer;
                     }
                 }
-
-
-
-
-
-
-
-                .menu-items {
-                    display: flex;
-                    justify-content: space-between;
-                    a {
-                        text-decoration: none;
-                        font-weight: 500;
-                        color: $primary-color;
-                        font-size: $body-size;
-                        font-weight: 600;
-                        cursor: pointer;
-                        }
-                    }
-                    .nav-active {
-                        color: $active-color;
-                        @include mobile {
-                            color: $secondary-color;
-                        }
-                    }
-                    .nav-deactive {
-                        color: $deactive-color;
-                        @include mobile {
-                            color: $mobile-color;
-                        }
-                    }
-                }
-                .notification {
-                    position: absolute;
-                    top: 72px;
-                    left: 924px;
+                .nav-active {
+                    color: $active-color;
                     @include tablet {
-                        top: -10px;
-                        left: 353px;
+                        color: $active-color;
                     }
                     @include mobile {
-                        display:none;
-                    }
-                    .notification-text {
-                        left: 8px;
-                        top: -2px;
+                        color: $secondary-color;
                     }
                 }
-            
-            .navbar-button {
+                .nav-deactive {
+                    color: $deactive-color;
+                    @include tablet {
+                        color: $deactive-color;
+                    }
+                    @include mobile {
+                        color: $mobile-color;
+                    }
+                }
+            }
+            .notification {
+                position: absolute;
+                top: 72px;
+                left: 924px;
+                @include tablet {
+                    top: -10px;
+                    left: 353px;
+                }
                 @include mobile {
-                    display: none;
-                }   
-            }
-
-
-
-
-
-
-
-            // .menu-wrap {
-            //     display: none;
-            //     @include tablet {
-            //         display: none;
-            //     }
-            //     @include mobile {
-            //         display: block;
-            //         z-index: 10;
-            //     }
-            //     #toggle-menu {
-            //         margin-left: 5px;
-            //         width: 32px;
-            //         height: 12px;
-            //         cursor: pointer;
-            //         opacity: 0;
-            //         &:checked {
-            //             transform: rotate(45deg);
-            //             .hamburguer {
-            //                 div {
-            //                     &:before {
-            //                         transform: rotate(90deg);
-            //                     }
-            //                     &:after { 
-            //                         transform: rotate(90deg);
-            //                     }
-            //                 }
-            //             }
-            //         }
-            //         .checkbox-item {
-            //             width: 32px;
-            //             height: 32px;
-            //         }
-            //     }
-            //     .hamburguer {
-            //         position: relative;
-            //         margin-top: -30px;
-            //         left: 10px;
-            //         width: 32px;
-            //         height: 12px;
-            //         display: flex;
-            //         transition: 400ms;
-            //         z-index: 1;
-            //         background-color: white;
-            //         div {
-            //             position: relative;
-            //             margin-top: 10px;
-            //             width: 100%;
-            //             height: 2px;
-            //             background-color: black;
-            //             display: flex;
-            //             align-items: center;
-            //             justify-content: center;
-            //             &:before {
-            //                 content: '';
-            //                 position: absolute;
-            //                 top: 0px;
-            //                 width: 32px;
-            //                 height: 2px;
-            //                 background-color: red;
-            //             }
-            //             &:after {
-            //                 content: '';
-            //                 position: absolute;
-            //                 top: 10px;
-            //                 width: 100%;
-            //                 height: 2px;
-            //                 background-color: red;
-            //             }
-            //         }
-            //     }
-            //     .menu {
-            //         display: none;
-            //     }
-            // }
-
-
-
-
-
-
-
-
-            
-            // .nav-mobile {
-            //     display: none;
-            //     @include tablet {
-            //         display: none;
-            //     }
-            //     @include mobile {
-            //         display: block;
-            //         overflow: hidden;
-            //     }
-            //     #toggle {
-            //         display: none;
-            //         @include tablet {
-            //             display: none;
-            //         }
-            //         @include mobile {
-            //             position: absolute;
-            //             left: -100%;
-            //             top: -100%;
-            //         }
-            //     }
-            
-            
-                // #toggle-menu {
-                //     display: none;
-                //     &:checked {
-                //         .burger-menu {
-                //             @include mobile {
-                //                 &:before {
-                //                     transform: rotate(45deg);
-                //                 }
-                //                 &:after {
-                //                     transform: rotate(-45deg);
-                //                     top: -12px;
-                //                 }
-                //             }
-                //         }
-                //     }
-                // }
-                // .menu-btn {
-                //     z-index: 1;
-                //     .burger-menu {
-                //         display: none;
-                //         @include mobile  {  
-                //             display: block;
-                //             // background-color: pink;  
-                //             border-top: 2px solid transparent;
-                //             width: 32px;
-                //             height: 12px;
-                //             cursor: pointer;
-                //             &:before {
-                //                 content: '';
-                //                 display: block;
-                //                 background: black;
-                //                 width: 32px;
-                //                 height: 2px;
-                //                 margin-top: -2px;
-                //                 transition: 3s;
-                //                 position: relative;
-                //             }
-                //             &:after {
-                //                 content: '';
-                //                 display: block;
-                //                 background: black;
-                //                 width: 32px;
-                //                 height: 2px;
-                //                 margin-top: 10px;
-                //                 transition: 3s;
-                //                 position: relative;
-                //             }
-                //         }
-                //     }
-
-
-
-
-
-                // .mobile-btn {
-                //     display: none;
-                //     @include tablet {
-                //         display: none;
-                //     }
-                //     @include mobile {
-                //         display: block;
-                //         width: 32px;
-                //         height: 12px;
-                //         border: none;
-                //         background: pink;
-                //         cursor: pointer;
-                //     }
-                    // .burger-menu {
-                    //     display: none;
-                    //     @include mobile  {    
-                    //         border-top: 2px solid red;
-                    //         width: 32px;
-                    //         &:before, &:after {
-                    //             content: '';
-                    //             display: block;
-                    //             background: black;
-                    //             margin-top: 6px;
-                    //             transition: 0.3s;
-                    //             position: relative;
-                    //         }
-                    //     }
-                    // }
-                    // &:active {
-                    //     .burger-menu {
-                    //         &:after {
-                    //             transform: rotate(45deg);
-                    //         }
-                    //         &:after {
-                    //             transform: rotate(-45deg);
-                    //             top: -7px;
-                    //         }
-                    //     }
-                    // }
+                    display:none;
+                }
+                .notification-text {
+                    left: 8px;
+                    top: -2px;
                 }
             }
+        
+        .navbar-button {
+            @include mobile {
+                display: none;
+            }   
+        }
+    }
+}

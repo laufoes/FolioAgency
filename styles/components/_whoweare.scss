@@ -196,9 +196,10 @@
             }
             @include mobile {
                 display: block;
-                width: 638px;
-                height: 434px;
+                width: 585px;
+                height: 354px;
                 margin-left: -105px;
+                margin-top: 15%;
             }
         }
         .list-nav {
@@ -318,7 +319,6 @@
             @include tablet {
                 margin-right: 10%;
                 width: 283px;
-                height: 283px;
             }
             @include mobile {
                 padding: 0;

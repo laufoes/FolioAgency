@@ -8,6 +8,14 @@
     overflow: hidden;
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
     z-index: -100;
+
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+    @include tablet {
+        max-width: 1024px;
+        height: 1510px;
+    }
     @include mobile {
         width: 375px;
         height: 2419px;
@@ -16,8 +24,15 @@
         position: absolute;
         z-index: -1;
         opacity: 0.25;
+        @include tablet {
+            top: 0px;
+            left: 81px;
+            width: 456px;
+            height: 582px;
+        }
         @include mobile {
             top: 902px;
+            left: 0;
             width: 468px;
             height: 555px;
             overflow: hidden;
@@ -27,21 +42,34 @@
         position: absolute;
         z-index: -1;
         opacity: 0.25;
+        @include tablet {
+            top: 669px;
+            left: 655px;
+            width: 468px;
+            height: 554px;
+        }
         @include mobile {
             top: 1836px;
-            left: -10px;
+            left: 0px;
+            width: 375px;
+            height: 579px;
             overflow: hidden;
         }
     }
     .whatwedo-wrapper {
+        display: flex;
+        @include tablet {
+            flex-direction: column;
+            width: 837px;
+            height: 160px;
+            margin: 112px auto 0 auto;
+        }
         @include mobile {
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 311px;
             height: 304px;
             padding-top: 128px;
-            // ajustar caso nao consiga deixar a navbar sticky
             margin: 0 auto;
             margin-bottom: 56px;
             z-index: 0;
@@ -49,6 +77,9 @@
         .subtitle {
             display: flex;
             justify-content: space-between;
+            @include tablet {
+                width: 302px;
+            }
             @include mobile {
                 width: 131px;
                 height: 18px;
@@ -58,25 +89,77 @@
                 font-weight: 600px;
             }
             .subtitle-logo {
+                @include tablet {
+                    width: 24px;
+                    height: 24px;
+                }
                 @include mobile {
                     display: none;
+                }
+            }
+            .whatwedo-description {
+                display: flex;
+                @include tablet {
+                    justify-content: space-between;
+                    width: 150px;
+                    height: 24px;
+
+                }
+                @include mobile {
+                    justify-content: space-between;
+                    width: 131px;
+                    height: 18px;
                 }
             }
         }
         .whatwedo-title {
             align-self: flex-start;
             font-weight: 600;
+            @include tablet {
+                align-self: center;
+                margin-left: -56px;
+                margin-top: 24px;
+                width: 475px;
+                height: 112px;
+                color: $dark-color;
+                font-size: $h4-mobile-size;
+                font-weight: 700;
+            }
             @include mobile {
-                width: 230px;
+                width: 245px;
                 height: 192px;
                 font-size: $h4-mobile-size;
                 color: $dark-color;
+                font-weight: 700;
+            }
+        }
+        .arrows-nav {
+            display: flex;
+            @include tablet {
+                position: absolute;
+                top: 151px;
+                right: 90px;
+                width: 108px;
+                height: 46px;
+            }
+            @include mobile {
+                position: relative;
+                top: 0;
+                right: 0;
+
             }
         }
     }
     .cards-wrapper {
+        display: flex;
+        @include tablet {
+            flex-direction: row;
+            width: 821px;
+            height: 415px;
+            margin: 24 auto 0 auto;
+            
+        }
         @include mobile {
-            display: flex;
             flex-direction: column;
             justify-content: space-between;
             width: 311px;
@@ -104,6 +187,16 @@
                 box-shadow: 0px 8px rgba(255, 255, 255, 0.5);
             }
         }
+        .card-active {
+            @include mobile {
+                background-color: $active-color;
+                color: $secondary-color;
+            &:hover {
+                background-color: $secondary-color;
+                color: $active-color;
+        }
+            }
+    }
         .card-img {
             @include mobile {
                 width: 91px;
