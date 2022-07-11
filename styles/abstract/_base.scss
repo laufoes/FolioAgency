@@ -14,6 +14,7 @@ html, body {
     font-weight: 400;
     margin: 0 0;
     width: 1440px;
+    overflow-x: hidden;
     @include tablet {
         font-size: $mobile-size;
         width: 1024px;
@@ -80,5 +81,8 @@ html, body {
     .active {
         color: $active-color;
         font-weight: 600;
+        &:hover {
+            color: $secondary-color;
+        }
     }
 }

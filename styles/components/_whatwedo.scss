@@ -4,19 +4,19 @@
 @import './buttons';
 
 .whatwedo-container {
+    display: flex;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
-    z-index: -100;
-
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
+    z-index: 0;
     @include tablet {
+        justify-content: space-between;
         max-width: 1024px;
         height: 1510px;
     }
     @include mobile {
+        justify-content: space-around;
         width: 375px;
         height: 2419px;
     }
@@ -49,7 +49,7 @@
             height: 554px;
         }
         @include mobile {
-            top: 1836px;
+            top: 1885px;
             left: 0px;
             width: 375px;
             height: 579px;
@@ -155,8 +155,11 @@
         @include tablet {
             flex-direction: row;
             width: 821px;
-            height: 415px;
-            margin: 24 auto 0 auto;
+            height: 340px;
+            margin: 28px auto 0 auto;
+            background-color: $secondary-color;
+            border-radius: 32px;
+            box-shadow: 0px 6px rgba(255, 255, 255, 0.5);
             
         }
         @include mobile {
@@ -166,7 +169,7 @@
             height: 856px;
             margin-bottom: 56px;
             padding-bottom: 24px;
-            padding-left: 32px;
+            background-color: transparent;
         }
         .card-service {
             display: flex;
@@ -180,7 +183,17 @@
                 background-color: $active-color;
                 color: $secondary-color;
             }
+            @include tablet {
+                justify-content: center;
+                width: 821px;
+                height: 340px;
+                border-radius: 32px;
+                display: flex;
+                flex-direction: column;
+            }
             @include mobile {
+                flex-direction: row;
+                justify-content: space-evenly;
                 width: 311px;
                 height: 190px;
                 border-radius: 32px;
@@ -188,34 +201,68 @@
             }
         }
         .card-active {
-            @include mobile {
+            @include tablet {
+                margin-top: -28px;
+                height: 398px;
                 background-color: $active-color;
                 color: $secondary-color;
-            &:hover {
-                background-color: $secondary-color;
-                color: $active-color;
-        }
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $active-color;
+                }
             }
+            @include mobile {
+                margin-top: 0;
+                background-color: $active-color;
+                color: $secondary-color;
+                height: auto;
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $active-color;
+            }
+        }
     }
         .card-img {
+            @include tablet {
+                width: 93px;
+                height: 88px;
+                margin-bottom: 32px;
+            }
             @include mobile {
                 width: 91px;
                 height: 91px;
+                margin-top: 49px;
             }
         }
     }
     .achievement-wrapper {
         display: flex;
+        margin: 0 auto;
+        @include tablet {
+            position: relative;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 398px;
+            height: 399px;
+            margin: 0 50%;
+            margin-top: 190px;
+        }
         @include mobile {
             flex-direction: column;
             justify-content: space-between;
-            width: 227px;
+            width: 311px;
             height: 399px;
-            padding-left: 32px;
+            margin-top: 0;
             margin-bottom: 30px;
+            margin: 0 auto;
         }
         .achievement-subtitle-wrapper {
             display: flex;
+            @include tablet {
+                width: 225px;
+                justify-content: space-between;
+                height: 24px;
+            }
             .logo-wrapper {
                 @include mobile {
                     display: none;
@@ -224,6 +271,9 @@
             .subtitle {
                 display: flex;
                 justify-content: space-between;
+                @include tablet {
+                    width: 156px;
+                }
                 @include mobile {
                     width: 156px;
                     height: 24px;
@@ -238,11 +288,16 @@
             }
         }
         .achievement-title {
+            color: $dark-color;
+            line-height: 32px;
+            @include tablet {
+                font-size: $h6-mobile-size;
+                font-weight: 700;
+            }
             @include mobile {
                 font-size: $h6-mobile-size;
-                color: $dark-color;
-                line-height: 32px;
                 font-weight: 600;
+                padding-right: 30%;
             }
         }
         .project-counter-wrapper {
@@ -266,6 +321,7 @@
     }
     .image-wrapper {
         display: flex;
+        position: relative;
         @include mobile {
             flex-direction: column;
             justify-content: space-around;
@@ -273,13 +329,25 @@
             width: 375px;
         }
         .img-desktop {
+            @include tablet {
+                display: none;
+            }
             @include mobile {
                 display: none;
             }
         }
         .phone-mobile {
             display: none;
+            @include tablet {
+                position: absolute;
+                display: block;
+                top: -539px;
+                left: 107px;
+            }
             @include mobile {
+                position: relative;
+                top: 0;
+                left: 0;
                 display: block;
                 width: 350px;
                 height: 460px;
@@ -287,9 +355,15 @@
             }
         }
         .pagination {
+            @include tablet {
+                margin-bottom: 105px;
+                margin-left: 228px;
+            }
             @include mobile {
                 width: 69px;
                 height: 12px;
+                margin-bottom: 0;
+                margin-left: 0;
             }
         }
     }

@@ -10,6 +10,7 @@ html, body {
   font-weight: 400;
   margin: 0 0;
   width: 1440px;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 2015px) {
   html, body {
@@ -93,6 +94,9 @@ html img, body img {
 html .active, body .active {
   color: #5468E7;
   font-weight: 600;
+}
+html .active:hover, body .active:hover {
+  color: #FFF;
 }
 
 .primary-button {
@@ -916,35 +920,21 @@ html .active, body .active {
 }
 @media screen and (max-width: 2015px) {
   .whoweare-container {
-    justify-content: space-around;
+    justify-content: space-between;
     width: 1024px;
-    height: 1242px;
+    max-height: 1242px;
     margin-top: 28px;
+    padding-bottom: 94px;
+    padding-top: 92px;
   }
 }
 @media screen and (max-width: 480px) {
   .whoweare-container {
     justify-content: space-around;
     width: 375px;
-    height: 1681px;
+    max-height: 1681px;
     margin-top: 0px;
     padding-bottom: 64px;
-  }
-}
-.whoweare-container .small-logo {
-  position: absolute;
-}
-@media screen and (max-width: 2015px) {
-  .whoweare-container .small-logo {
-    top: 96px;
-    left: 110px;
-    width: 17px;
-    height: 17px;
-  }
-}
-@media screen and (max-width: 480px) {
-  .whoweare-container .small-logo {
-    display: none;
   }
 }
 .whoweare-container .shape-bg {
@@ -969,7 +959,6 @@ html .active, body .active {
 }
 @media screen and (max-width: 2015px) {
   .whoweare-container .whoweare-wrapper {
-    width: 823px;
     height: 160px;
     margin-top: 54px;
     margin-left: 1px;
@@ -982,6 +971,22 @@ html .active, body .active {
     justify-content: space-between;
     width: 310px;
     height: 314px;
+  }
+}
+.whoweare-container .whoweare-wrapper .small-logo {
+  align-self: flex-start;
+}
+@media screen and (max-width: 2015px) {
+  .whoweare-container .whoweare-wrapper .small-logo {
+    top: 96px;
+    left: 110px;
+    width: 17px;
+    height: 17px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .whoweare-container .whoweare-wrapper .small-logo {
+    display: none;
   }
 }
 .whoweare-container .whoweare-wrapper .subtitle {
@@ -1091,100 +1096,112 @@ html .active, body .active {
     width: 100%;
   }
 }
-.whoweare-container .img-wrapper {
-  position: relative;
+.whoweare-container .img-section-wrapper {
   z-index: 1;
   overflow: visible;
 }
 @media screen and (max-width: 2015px) {
-  .whoweare-container .img-wrapper {
+  .whoweare-container .img-section-wrapper {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    align-content: space-between;
     width: 832px;
     height: 424px;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 480px) {
-  .whoweare-container .img-wrapper {
+  .whoweare-container .img-section-wrapper {
     overflow: hidden;
     width: 375px;
     height: 424px;
   }
 }
+.whoweare-container .img-section-wrapper .img-box {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 @media screen and (max-width: 2015px) {
-  .whoweare-container .img-wrapper .about-img {
+  .whoweare-container .img-section-wrapper .img-box .about-img {
     display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .whoweare-container .img-wrapper .about-img {
+  .whoweare-container .img-section-wrapper .img-box .about-img {
     display: none;
   }
 }
-.whoweare-container .img-wrapper .about-img-mobile {
+.whoweare-container .img-section-wrapper .img-box .about-img-mobile {
   display: none;
 }
 @media screen and (max-width: 2015px) {
-  .whoweare-container .img-wrapper .about-img-mobile {
+  .whoweare-container .img-section-wrapper .img-box .about-img-mobile {
     display: inline-block;
     width: 692px;
     height: 434px;
-    margin-left: 12%;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
 @media screen and (max-width: 480px) {
-  .whoweare-container .img-wrapper .about-img-mobile {
+  .whoweare-container .img-section-wrapper .img-box .about-img-mobile {
     display: block;
     width: 585px;
     height: 354px;
-    margin-left: -105px;
+    margin-left: 19%;
     margin-top: 15%;
   }
 }
-.whoweare-container .img-wrapper .list-nav {
-  position: absolute;
+.whoweare-container .img-section-wrapper .list-nav {
+  position: relative;
+  overflow: visible;
   color: #ADADAD;
   font-size: 12px;
   font-weight: 600;
-  width: 32px;
   z-index: 2;
 }
 @media screen and (max-width: 2015px) {
-  .whoweare-container .img-wrapper .list-nav {
-    margin: 0 auto;
-    top: 36px;
-    right: 95%;
+  .whoweare-container .img-section-wrapper .list-nav {
+    margin-top: 28px;
   }
 }
 @media screen and (max-width: 480px) {
-  .whoweare-container .img-wrapper .list-nav {
+  .whoweare-container .img-section-wrapper .list-nav {
     display: none;
   }
 }
-.whoweare-container .img-wrapper .list-nav ul {
-  position: relative;
+.whoweare-container .img-section-wrapper .list-nav .list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 370px;
 }
-.whoweare-container .img-wrapper .list-nav ul .nav-active {
+@media screen and (max-width: 2015px) {
+  .whoweare-container .img-section-wrapper .list-nav .list {
+    height: 370px;
+  }
+}
+.whoweare-container .img-section-wrapper .list-nav .list .nav-active {
   color: #FFF;
 }
-.whoweare-container .img-wrapper .list-nav ul .line {
-  position: absolute;
-  width: 143px;
-  height: 12px;
-  top: 270px;
-  left: 36px;
+@media screen and (max-width: 2015px) {
+  .whoweare-container .img-section-wrapper .list-nav .line {
+    position: absolute;
+    top: 135px;
+    left: 24px;
+    width: 143px;
+    height: 12px;
+  }
 }
-.whoweare-container .img-wrapper .list-nav ul .line-active {
-  position: absolute;
-  width: 17px;
-  height: 3px;
-  top: 267px;
-  left: -62px;
+@media screen and (max-width: 2015px) {
+  .whoweare-container .img-section-wrapper .list-nav .line-active {
+    position: absolute;
+    top: 137px;
+    left: -24px;
+    width: 17px;
+    height: 3px;
+  }
 }
 .whoweare-container .counter-container {
   display: flex;
@@ -1258,6 +1275,11 @@ html .active, body .active {
     color: #ADADAD;
     font-weight: 400;
     line-height: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .whoweare-container .counter-container .aboutus-wrapper .aboutus-button {
+    display: none;
   }
 }
 .whoweare-container .counter-container .counter-wrapper {
@@ -1414,19 +1436,23 @@ html .active, body .active {
 }
 
 .whatwedo-container {
+  display: flex;
+  flex-direction: column;
   position: relative;
   overflow: hidden;
   background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
-  z-index: -100;
+  z-index: 0;
 }
 @media screen and (max-width: 2015px) {
   .whatwedo-container {
+    justify-content: space-between;
     max-width: 1024px;
     height: 1510px;
   }
 }
 @media screen and (max-width: 480px) {
   .whatwedo-container {
+    justify-content: space-around;
     width: 375px;
     height: 2419px;
   }
@@ -1468,7 +1494,7 @@ html .active, body .active {
 }
 @media screen and (max-width: 480px) {
   .whatwedo-container .whatwedo-bg2 {
-    top: 1836px;
+    top: 1885px;
     left: 0px;
     width: 375px;
     height: 579px;
@@ -1596,8 +1622,11 @@ html .active, body .active {
   .whatwedo-container .cards-wrapper {
     flex-direction: row;
     width: 821px;
-    height: 415px;
-    margin: 24 auto 0 auto;
+    height: 340px;
+    margin: 28px auto 0 auto;
+    background-color: #FFF;
+    border-radius: 32px;
+    box-shadow: 0px 6px rgba(255, 255, 255, 0.5);
   }
 }
 @media screen and (max-width: 480px) {
@@ -1608,7 +1637,7 @@ html .active, body .active {
     height: 856px;
     margin-bottom: 56px;
     padding-bottom: 24px;
-    padding-left: 32px;
+    background-color: transparent;
   }
 }
 .whatwedo-container .cards-wrapper .card-service {
@@ -1624,16 +1653,30 @@ html .active, body .active {
   background-color: #5468E7;
   color: #FFF;
 }
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .cards-wrapper .card-service {
+    justify-content: center;
+    width: 821px;
+    height: 340px;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 480px) {
   .whatwedo-container .cards-wrapper .card-service {
+    flex-direction: row;
+    justify-content: space-evenly;
     width: 311px;
     height: 190px;
     border-radius: 32px;
     box-shadow: 0px 8px rgba(255, 255, 255, 0.5);
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 2015px) {
   .whatwedo-container .cards-wrapper .card-active {
+    margin-top: -28px;
+    height: 398px;
     background-color: #5468E7;
     color: #FFF;
   }
@@ -1643,26 +1686,66 @@ html .active, body .active {
   }
 }
 @media screen and (max-width: 480px) {
+  .whatwedo-container .cards-wrapper .card-active {
+    margin-top: 0;
+    background-color: #5468E7;
+    color: #FFF;
+    height: auto;
+  }
+  .whatwedo-container .cards-wrapper .card-active:hover {
+    background-color: #FFF;
+    color: #5468E7;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .cards-wrapper .card-img {
+    width: 93px;
+    height: 88px;
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 480px) {
   .whatwedo-container .cards-wrapper .card-img {
     width: 91px;
     height: 91px;
+    margin-top: 49px;
   }
 }
 .whatwedo-container .achievement-wrapper {
   display: flex;
+  margin: 0 auto;
+}
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .achievement-wrapper {
+    position: relative;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 398px;
+    height: 399px;
+    margin: 0 50%;
+    margin-top: 190px;
+  }
 }
 @media screen and (max-width: 480px) {
   .whatwedo-container .achievement-wrapper {
     flex-direction: column;
     justify-content: space-between;
-    width: 227px;
+    width: 311px;
     height: 399px;
-    padding-left: 32px;
+    margin-top: 0;
     margin-bottom: 30px;
+    margin: 0 auto;
   }
 }
 .whatwedo-container .achievement-wrapper .achievement-subtitle-wrapper {
   display: flex;
+}
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .achievement-wrapper .achievement-subtitle-wrapper {
+    width: 225px;
+    justify-content: space-between;
+    height: 24px;
+  }
 }
 @media screen and (max-width: 480px) {
   .whatwedo-container .achievement-wrapper .achievement-subtitle-wrapper .logo-wrapper {
@@ -1672,6 +1755,11 @@ html .active, body .active {
 .whatwedo-container .achievement-wrapper .achievement-subtitle-wrapper .subtitle {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .achievement-wrapper .achievement-subtitle-wrapper .subtitle {
+    width: 156px;
+  }
 }
 @media screen and (max-width: 480px) {
   .whatwedo-container .achievement-wrapper .achievement-subtitle-wrapper .subtitle {
@@ -1686,12 +1774,21 @@ html .active, body .active {
   color: #232340;
   font-weight: 600;
 }
+.whatwedo-container .achievement-wrapper .achievement-title {
+  color: #232340;
+  line-height: 32px;
+}
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .achievement-wrapper .achievement-title {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
 @media screen and (max-width: 480px) {
   .whatwedo-container .achievement-wrapper .achievement-title {
     font-size: 24px;
-    color: #232340;
-    line-height: 32px;
     font-weight: 600;
+    padding-right: 30%;
   }
 }
 .whatwedo-container .achievement-wrapper .project-counter-wrapper {
@@ -1716,6 +1813,7 @@ html .active, body .active {
 }
 .whatwedo-container .image-wrapper {
   display: flex;
+  position: relative;
 }
 @media screen and (max-width: 480px) {
   .whatwedo-container .image-wrapper {
@@ -1723,6 +1821,11 @@ html .active, body .active {
     justify-content: space-around;
     align-items: center;
     width: 375px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .image-wrapper .img-desktop {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1733,18 +1836,37 @@ html .active, body .active {
 .whatwedo-container .image-wrapper .phone-mobile {
   display: none;
 }
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .image-wrapper .phone-mobile {
+    position: absolute;
+    display: block;
+    top: -539px;
+    left: 107px;
+  }
+}
 @media screen and (max-width: 480px) {
   .whatwedo-container .image-wrapper .phone-mobile {
+    position: relative;
+    top: 0;
+    left: 0;
     display: block;
     width: 350px;
     height: 460px;
     margin-bottom: 56px;
   }
 }
+@media screen and (max-width: 2015px) {
+  .whatwedo-container .image-wrapper .pagination {
+    margin-bottom: 105px;
+    margin-left: 228px;
+  }
+}
 @media screen and (max-width: 480px) {
   .whatwedo-container .image-wrapper .pagination {
     width: 69px;
     height: 12px;
+    margin-bottom: 0;
+    margin-left: 0;
   }
 }
 
