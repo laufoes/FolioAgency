@@ -1,0 +1,62 @@
+@import '../abstract/variables';
+@import '../abstract/media-queries';
+
+.mobile-nav-container {
+    background-color: $dark-color;
+    width: 375px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+    .mobile-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 317px;
+        height: 128px;
+        margin: 0 auto;
+        .mobile-bg {
+            position: absolute;
+            width: 456px;
+            height: 582px;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+        .mobile-nav-logo {
+            z-index: 2;
+            width: 128px;
+            height: 32px;
+        }
+    }
+    .mobile-nav-menu {
+        width: 122px;
+        height: 280px;
+        margin-left: 32px;
+        .mobile-menu-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            a {
+                text-decoration: none;
+                font-weight: 500;
+                color: #595976;
+                font-size: 32px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+            .mobile-active {
+                color: $secondary-color;
+            }
+        }
+        .mobile-social-icons {
+            width: 184px;
+            height: 40px;
+            margin-bottom: 80px;
+            margin-left: 46px;
+        }
+    }
+}
