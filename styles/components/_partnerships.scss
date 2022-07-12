@@ -4,6 +4,13 @@
 
 .partnerships-container {
     display: flex;
+    @include tablet {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 1024px;
+        height: 2347px;
+        // background-color: peachpuff;
+    }
     @include mobile {
         flex-direction: column;
         justify-content: space-around;
@@ -11,6 +18,10 @@
         height: 3484px;
     }
     .title-content {
+        @include tablet {
+            margin: 0 auto;
+            width: 821px;
+        }
         @include mobile {
             display: flex;
             flex-direction: column;
@@ -20,30 +31,87 @@
             margin-left: 32px;
             // margin-top: 128px;
         }
+        .partnerships-wrapper {
+            @include tablet {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 680px;
+                height: 195px;
+                margin-left: 15%;
+            }
+            @include mobile {
+                display: contents;
+            }
+            .partnerships-title {
+                color: $dark-color;
+                @include tablet {
+                    font-size: $d1-tablet-size;
+                    width: 485px;
+                    height: 72px;
+                }
+                @include mobile {
+                    font-size: $h4-mobile-size;
+                    width: 255px;
+                    height: 96px;
+                }
+            }
+            .partnerships-description {
+                @include tablet {
+                    width: 329px;
+                    font-size: $tablet-size;
+                }
+                @include mobile {
+                    width: 311px;
+                    font-size: $tablet-size;
+                }
+            }
+
+        }
         .partnerships-subtitle {
             display: flex;
             justify-content: space-between;
+            @include tablet {
+                width: 302px;
+                height: 29px;
+                margin-bottom: 24px;
+            }
             @include mobile {
                 width: 161px;
                 height: 18px;
+                margin-bottom: 0;
             }
             .subtitle-logo {
+                @include tablet {
+                    width: 24px;
+                    height: 24px;
+                }
                 @include mobile {
                     display: none;
                 }
             }
-        }
-        .partnerships-title {
-            color: $dark-color;
-            @include mobile {
-                width: 255px;
-                height: 96px;
+            .subtitle-wrapper {
+                @include tablet {
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    width: 184px;
+                    height: 24px;
+                }
+                @include mobile {
+                    display: contents;
+                }
             }
         }
-        .partnerships-description {
+        .secondary-button {
+            @include tablet {
+                float: right;
+                margin-top: 0px;
+                width: 118px;
+                height: 45px;
+            }
             @include mobile {
-                width: 311px;
-                font-size: $tablet-size;
+                display: none;
             }
         }
     }
@@ -52,10 +120,30 @@
         justify-content: space-between;
         flex-direction: column;
         margin-left: 32px;
+        margin: 0 auto;
+        position: relative;
+        @include tablet {
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 821px;
+            height: 2034px;
+        }
         @include mobile {
             flex-direction: column;
             width: 313px;
             height: 3048px;
+        }
+        .featured-bg {
+            @include tablet {
+                position: absolute;
+                right: -16%;
+                z-index: -1;
+                width: 554px;
+                height: 492px;;
+            }
+            @include mobile {
+                display: none;
+            }
         }
         .partnerships-card {
             display: flex;

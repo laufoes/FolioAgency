@@ -4,19 +4,51 @@
 
 .cta-container {
     color: $secondary-color;
-    padding-top: 56px;
+    position: relative;
+    overflow: visible;
+    @include tablet {
+        width: auto;
+        height: auto;
+        padding-top: 0px;
+    }
     @include mobile {
         width: 375px;
         height: 977px;
         z-index: 0;
+        padding-top: 56px;
+    }
+    .small-logo {
+        @include tablet {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            width: 28px;
+            height: 28px;
+        }
+        @include mobile {
+            display: none;
+        }
     }
     .cta-wrapper {
         display: flex;
+        @include tablet {
+            flex-flow: row-reverse;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 822px;
+            height: 512px;
+            margin: 91px auto 91px auto;
+            background-color: $active-color;
+            border: none;
+            border-radius: 32px;
+            padding-top: 0;
+            z-index: 2;
+        }
         @include mobile {
             flex-direction: column;
             justify-content: space-between;
             width: 312px;
-            // height: 929px;
+            height: 866px;
             background-color: $active-color;
             border: none;
             border-radius: 32px;
@@ -25,19 +57,32 @@
             z-index: 2;
         }
         .cta-content {
+            display: flex;
+            z-index: 1;
+            @include tablet {
+                flex-direction: column;
+                justify-content: space-between;
+                width: 261px;
+                height: 350px;
+                margin-left: -50%;
+            }
             @include mobile {
-                display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 width: 261px;
                 height: 344px;
                 padding-left: 45px;
                 z-index: 2;
+                margin-left: 0;
             }
             .cta-subtitle {
+                display: flex;
+                justify-content: space-between;
+                @include tablet {
+                    width: 154px;
+                    height: 24px;
+                }
                 @include mobile {
-                    display: flex;
-                    justify-content: space-between;
                     width: 138px;
                     height: 18px;
                     margin-bottom: 32px;
@@ -55,6 +100,10 @@
                 }
             }
             .fourth-button {
+                @include tablet {
+                    width: 143px;
+                    height: 45px;
+                }
                 @include mobile {
                     width: 143px;
                     height: 46px;
@@ -64,12 +113,20 @@
         .cta-image {
             z-index: 2;
             .desktop {
+                @include tablet {
+                    float: left;
+                    margin-left: -150px;
+                    width: auto;
+                    height: 490px;
+                }
                 @include mobile {
                     display: none;
                 }
             }   
             .mobile {
+                display: none;
                 @include mobile {
+                    display: block;
                     margin-left: -30px;
                     width: 375px;
                     height: 521px;
@@ -81,23 +138,58 @@
         position: relative;
         display: flex;
         justify-content: flex-end;
-        z-index: 0;
+        overflow: visible;
         .blue-desktop {
+            @include tablet {
+                display: block;
+                position: absolute;
+                z-index: -10;
+                width: 880px;
+                height: 800px;
+                top: -740px;
+                left: 5%;
+            }
             @include mobile {
                 display: none;
             }
         }
         .purple-desktop {
+            @include tablet {
+                display: none;
+            }
             @include mobile {
                 display: none;
             }
         }
         .pink-mobile { 
             position: absolute;
-            bottom: -48px;  
-            right: 0px; 
-            width: 260px;
-            height: 730px;
+            @include tablet {
+                display: none;
+            }
+            @include mobile {
+                display: block;
+                top: auto;
+                bottom: -48px;  
+                right: 0px; 
+                width: 260px;
+                height: 730px;
+                z-index: 0;
+            }
+        }
+        .pink-tablet {
+            display: none;
+            @include tablet {
+                display: block;
+                position: absolute;
+                bottom: 125px;
+                right: 5%;
+                width: 358px;
+                height: 444px;
+                z-index: 0;
+            }
+            @include mobile {
+                display: none;
+            }
         }
     }
 }

@@ -1974,12 +1974,26 @@ html .active:hover, body .active:hover {
 .partnerships-container {
   display: flex;
 }
+@media screen and (max-width: 2015px) {
+  .partnerships-container {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1024px;
+    height: 2347px;
+  }
+}
 @media screen and (max-width: 480px) {
   .partnerships-container {
     flex-direction: column;
     justify-content: space-around;
     width: 375px;
     height: 3484px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content {
+    margin: 0 auto;
+    width: 821px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1992,14 +2006,72 @@ html .active:hover, body .active:hover {
     margin-left: 32px;
   }
 }
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .partnerships-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 680px;
+    height: 195px;
+    margin-left: 15%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerships-container .title-content .partnerships-wrapper {
+    display: contents;
+  }
+}
+.partnerships-container .title-content .partnerships-wrapper .partnerships-title {
+  color: #232340;
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .partnerships-wrapper .partnerships-title {
+    font-size: 64px;
+    width: 485px;
+    height: 72px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerships-container .title-content .partnerships-wrapper .partnerships-title {
+    font-size: 40px;
+    width: 255px;
+    height: 96px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .partnerships-wrapper .partnerships-description {
+    width: 329px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerships-container .title-content .partnerships-wrapper .partnerships-description {
+    width: 311px;
+    font-size: 16px;
+  }
+}
 .partnerships-container .title-content .partnerships-subtitle {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .partnerships-subtitle {
+    width: 302px;
+    height: 29px;
+    margin-bottom: 24px;
+  }
 }
 @media screen and (max-width: 480px) {
   .partnerships-container .title-content .partnerships-subtitle {
     width: 161px;
     height: 18px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .partnerships-subtitle .subtitle-logo {
+    width: 24px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2007,19 +2079,31 @@ html .active:hover, body .active:hover {
     display: none;
   }
 }
-.partnerships-container .title-content .partnerships-title {
-  color: #232340;
-}
-@media screen and (max-width: 480px) {
-  .partnerships-container .title-content .partnerships-title {
-    width: 255px;
-    height: 96px;
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .partnerships-subtitle .subtitle-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 184px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 480px) {
-  .partnerships-container .title-content .partnerships-description {
-    width: 311px;
-    font-size: 16px;
+  .partnerships-container .title-content .partnerships-subtitle .subtitle-wrapper {
+    display: contents;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .title-content .secondary-button {
+    float: right;
+    margin-top: 0px;
+    width: 118px;
+    height: 45px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerships-container .title-content .secondary-button {
+    display: none;
   }
 }
 .partnerships-container .cards-wrapper {
@@ -2027,12 +2111,36 @@ html .active:hover, body .active:hover {
   justify-content: space-between;
   flex-direction: column;
   margin-left: 32px;
+  margin: 0 auto;
+  position: relative;
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .cards-wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 821px;
+    height: 2034px;
+  }
 }
 @media screen and (max-width: 480px) {
   .partnerships-container .cards-wrapper {
     flex-direction: column;
     width: 313px;
     height: 3048px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .partnerships-container .cards-wrapper .featured-bg {
+    position: absolute;
+    right: -16%;
+    z-index: -1;
+    width: 554px;
+    height: 492px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .partnerships-container .cards-wrapper .featured-bg {
+    display: none;
   }
 }
 .partnerships-container .cards-wrapper .partnerships-card {
@@ -2203,23 +2311,62 @@ html .active:hover, body .active:hover {
 
 .cta-container {
   color: #FFF;
-  padding-top: 56px;
+  position: relative;
+  overflow: visible;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container {
+    width: auto;
+    height: auto;
+    padding-top: 0px;
+  }
 }
 @media screen and (max-width: 480px) {
   .cta-container {
     width: 375px;
     height: 977px;
     z-index: 0;
+    padding-top: 56px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .small-logo {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    width: 28px;
+    height: 28px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cta-container .small-logo {
+    display: none;
   }
 }
 .cta-container .cta-wrapper {
   display: flex;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-wrapper {
+    flex-flow: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 822px;
+    height: 512px;
+    margin: 91px auto 91px auto;
+    background-color: #5468E7;
+    border: none;
+    border-radius: 32px;
+    padding-top: 0;
+    z-index: 2;
+  }
 }
 @media screen and (max-width: 480px) {
   .cta-container .cta-wrapper {
     flex-direction: column;
     justify-content: space-between;
     width: 312px;
+    height: 866px;
     background-color: #5468E7;
     border: none;
     border-radius: 32px;
@@ -2228,21 +2375,42 @@ html .active:hover, body .active:hover {
     z-index: 2;
   }
 }
+.cta-container .cta-wrapper .cta-content {
+  display: flex;
+  z-index: 1;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-wrapper .cta-content {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 261px;
+    height: 350px;
+    margin-left: -50%;
+  }
+}
 @media screen and (max-width: 480px) {
   .cta-container .cta-wrapper .cta-content {
-    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     width: 261px;
     height: 344px;
     padding-left: 45px;
     z-index: 2;
+    margin-left: 0;
+  }
+}
+.cta-container .cta-wrapper .cta-content .cta-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-wrapper .cta-content .cta-subtitle {
+    width: 154px;
+    height: 24px;
   }
 }
 @media screen and (max-width: 480px) {
   .cta-container .cta-wrapper .cta-content .cta-subtitle {
-    display: flex;
-    justify-content: space-between;
     width: 138px;
     height: 18px;
     margin-bottom: 32px;
@@ -2259,6 +2427,12 @@ html .active:hover, body .active:hover {
     letter-spacing: -0.5px;
   }
 }
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-wrapper .cta-content .fourth-button {
+    width: 143px;
+    height: 45px;
+  }
+}
 @media screen and (max-width: 480px) {
   .cta-container .cta-wrapper .cta-content .fourth-button {
     width: 143px;
@@ -2268,13 +2442,25 @@ html .active:hover, body .active:hover {
 .cta-container .cta-wrapper .cta-image {
   z-index: 2;
 }
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-wrapper .cta-image .desktop {
+    float: left;
+    margin-left: -150px;
+    width: auto;
+    height: 490px;
+  }
+}
 @media screen and (max-width: 480px) {
   .cta-container .cta-wrapper .cta-image .desktop {
     display: none;
   }
 }
+.cta-container .cta-wrapper .cta-image .mobile {
+  display: none;
+}
 @media screen and (max-width: 480px) {
   .cta-container .cta-wrapper .cta-image .mobile {
+    display: block;
     margin-left: -30px;
     width: 375px;
     height: 521px;
@@ -2284,10 +2470,26 @@ html .active:hover, body .active:hover {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  z-index: 0;
+  overflow: visible;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-bg-shape .blue-desktop {
+    display: block;
+    position: absolute;
+    z-index: -10;
+    width: 880px;
+    height: 800px;
+    top: -740px;
+    left: 5%;
+  }
 }
 @media screen and (max-width: 480px) {
   .cta-container .cta-bg-shape .blue-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-bg-shape .purple-desktop {
     display: none;
   }
 }
@@ -2298,10 +2500,41 @@ html .active:hover, body .active:hover {
 }
 .cta-container .cta-bg-shape .pink-mobile {
   position: absolute;
-  bottom: -48px;
-  right: 0px;
-  width: 260px;
-  height: 730px;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-bg-shape .pink-mobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cta-container .cta-bg-shape .pink-mobile {
+    display: block;
+    top: auto;
+    bottom: -48px;
+    right: 0px;
+    width: 260px;
+    height: 730px;
+    z-index: 0;
+  }
+}
+.cta-container .cta-bg-shape .pink-tablet {
+  display: none;
+}
+@media screen and (max-width: 2015px) {
+  .cta-container .cta-bg-shape .pink-tablet {
+    display: block;
+    position: absolute;
+    bottom: 125px;
+    right: 5%;
+    width: 358px;
+    height: 444px;
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cta-container .cta-bg-shape .pink-tablet {
+    display: none;
+  }
 }
 
 .notification {
@@ -2331,15 +2564,33 @@ html .active:hover, body .active:hover {
   background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 1%, rgba(237, 229, 240, 0.504289) 100%);
   overflow: hidden;
 }
+@media screen and (max-width: 2015px) {
+  .jobs-container {
+    width: auto;
+    height: 944px;
+  }
+}
 @media screen and (max-width: 480px) {
   .jobs-container {
     width: 375px;
     height: 1170px;
   }
 }
+.jobs-container .jobs-bg {
+  z-index: -1;
+}
+.jobs-container .jobs-bg img {
+  position: absolute;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-bg img {
+    width: 457px;
+    height: 582px;
+    left: 233px;
+  }
+}
 @media screen and (max-width: 480px) {
   .jobs-container .jobs-bg img {
-    position: absolute;
     width: 457px;
     height: 582px;
     left: 162px;
@@ -2347,6 +2598,17 @@ html .active:hover, body .active:hover {
 }
 .jobs-container .jobs-wrapper {
   display: flex;
+  margin: 0 auto;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    width: 823px;
+    height: 769px;
+    margin-top: 128px;
+    margin-bottom: 89px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .jobs-wrapper {
@@ -2354,29 +2616,53 @@ html .active:hover, body .active:hover {
     justify-content: space-between;
     width: 311px;
     height: 1010px;
-    margin: 0 auto;
     margin-top: 128px;
+    margin-bottom: 0px;
   }
 }
 .jobs-container .jobs-wrapper .jobs-section {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section {
+    width: 468px;
+    height: 316px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .jobs-wrapper .jobs-section {
-    flex-direction: column;
-    justify-content: space-between;
     width: 311px;
     height: 198px;
   }
 }
 .jobs-container .jobs-wrapper .jobs-section .subtitle {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  text-align: left;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section .subtitle {
+    width: 295px;
+    height: 28px;
+    font-size: 24px;
+    margin-left: -12px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .jobs-wrapper .jobs-section .subtitle {
+    margin-left: 0;
     width: 128px;
     height: 18px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section .subtitle img {
+    width: 24px;
+    height: 24px;
+    margin-right: 24px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2390,19 +2676,53 @@ html .active:hover, body .active:hover {
 }
 .jobs-container .jobs-wrapper .jobs-section .jobs-title {
   color: #232340;
-  font-size: 48px;
   font-weight: 700;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section .jobs-title {
+    width: 329px;
+    height: 92px;
+    font-size: 76px;
+    margin-left: 76px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .jobs-wrapper .jobs-section .jobs-title {
     width: 227px;
     height: 48px;
+    font-size: 48px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section .jobs-description {
+    width: 367px;
+    height: 96px;
+    margin-left: 76px;
   }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .jobs-wrapper .jobs-section .jobs-description {
     width: 311px;
     height: 84px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section .scroll-wrapper {
+    display: flex;
+    align-items: center;
+    width: 158px;
+    height: 48px;
+    margin-left: 76px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .jobs-wrapper .jobs-section .scroll-wrapper img {
+    transform: rotate(-90deg);
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2412,11 +2732,17 @@ html .active:hover, body .active:hover {
 }
 .jobs-container .cards-wrapper {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .cards-wrapper {
+    width: 400px;
+    height: 764px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .cards-wrapper {
-    flex-direction: column;
-    justify-content: space-between;
     width: 311px;
     height: 764px;
   }
@@ -2424,16 +2750,31 @@ html .active:hover, body .active:hover {
 .jobs-container .cards-wrapper .jobs-cards {
   display: flex;
   box-shadow: 0px 10px 20px rgba(237, 229, 240, 0.804289);
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #FFF;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .cards-wrapper .jobs-cards {
+    width: 399px;
+    height: 175px;
+    border-radius: 28px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .cards-wrapper .jobs-cards {
-    position: relative;
-    flex-direction: column;
-    justify-content: space-around;
     width: 311px;
     height: 175px;
-    background-color: #FFF;
     border-radius: 24px;
+  }
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper {
+    width: 187px;
+    height: 64px;
+    padding-left: 40px;
+    padding-top: 0px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2448,6 +2789,11 @@ html .active:hover, body .active:hover {
   color: #232340;
   font-weight: 700;
 }
+@media screen and (max-width: 2015px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title {
+    font-size: 24px;
+  }
+}
 @media screen and (max-width: 480px) {
   .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title {
     position: relative;
@@ -2455,6 +2801,12 @@ html .active:hover, body .active:hover {
 }
 .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title .notification {
   position: absolute;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title .notification {
+    top: 51px;
+    left: 226px;
+  }
 }
 @media screen and (max-width: 480px) {
   .jobs-container .cards-wrapper .jobs-cards .content-wrapper .card-title .notification {
@@ -2475,9 +2827,18 @@ html .active:hover, body .active:hover {
   width: 14px;
   height: 10px;
 }
+.jobs-container .cards-wrapper .jobs-cards .card-active-img {
+  position: absolute;
+}
+@media screen and (max-width: 2015px) {
+  .jobs-container .cards-wrapper .jobs-cards .card-active-img {
+    left: 235px;
+    width: 150px;
+    height: 150px;
+  }
+}
 @media screen and (max-width: 480px) {
   .jobs-container .cards-wrapper .jobs-cards .card-active-img {
-    position: absolute;
     left: 235px;
     width: 150px;
     height: 150px;

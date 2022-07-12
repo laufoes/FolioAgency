@@ -6,14 +6,24 @@
     position: relative;
     background: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 1%, rgba(237, 229, 240, 0.504289) 100%);
     overflow: hidden;  
+    @include tablet {
+        width: auto;
+        height: 944px;
+    }
     @include mobile {
         width: 375px;
         height: 1170px;
     }
     .jobs-bg {
+        z-index: -1;
         img {
+            position: absolute;
+            @include tablet {
+                width: 457px;
+                height: 582px;
+                left: 233px;
+            }
             @include mobile {
-                position: absolute;
                 width: 457px;
                 height: 582px;
                 left: 162px;
@@ -22,30 +32,57 @@
     }
     .jobs-wrapper {
         display: flex;
+        margin: 0 auto;
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-around;
+            width: 823px;
+            height: 769px;
+            margin-top: 128px;
+            margin-bottom: 89px;
+        }
         @include mobile {
             flex-direction: column;
             justify-content: space-between;
             width: 311px;
             height: 1010px;
-            margin: 0 auto;
             margin-top: 128px;
+            margin-bottom: 0px;
         }
         .jobs-section {
             display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            @include tablet {
+                width: 468px;
+                height: 316px;
+            }
             @include mobile {
-                flex-direction: column;
-                justify-content: space-between;
                 width: 311px;
                 height: 198px;
             }
             .subtitle {
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
+                text-align: left;
+                @include tablet {
+                    width: 295px;
+                    height: 28px;
+                    font-size: 24px;
+                    margin-left: -12px;
+                }
                 @include mobile {
+                    margin-left: 0;
                     width: 128px;
                     height: 18px;
+                    font-size: 14px;
                 }
                 img {
+                    @include tablet {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 24px;
+                    }
                     @include mobile {
                         display: none;
                     }
@@ -57,20 +94,49 @@
             }
             .jobs-title {
                 color: $dark-color;
-                font-size: $h2-mobile-size;
                 font-weight: 700;
+                @include tablet {
+                    width: 329px;
+                    height: 92px;
+                    font-size: 76px;
+                    margin-left: 76px;
+      
+                }
                 @include mobile {
                     width: 227px;
                     height: 48px;
+                    font-size: $h2-mobile-size;
+                    margin-left: 0;
                 }
             }
             .jobs-description {
+                @include tablet {
+                    width: 367px;
+                    height: 96px;
+                    margin-left: 76px;
+                }
                 @include mobile {
                     width: 311px;
                     height: 84px;
+                    margin-left: 0;
                 }
             }
             .scroll-wrapper {
+                @include tablet {
+                    display: flex;
+                    align-items: center;
+                    width: 158px;
+                    height: 48px;
+                    margin-left: 76px;
+                }
+                img {
+                    @include tablet {
+                        transform: rotate(-90deg);
+                        width: 48px;
+                        height: 48px;
+                        margin-right: 16px;
+                    }
+                }
                 @include mobile {
                     display: none;
                 }
@@ -79,25 +145,40 @@
     }
     .cards-wrapper {
         display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include tablet {
+            width: 400px;
+            height: 764px;
+        }
         @include mobile {
-            flex-direction: column;
-            justify-content: space-between;
             width: 311px;
             height: 764px;
         }
         .jobs-cards {
             display: flex;
             box-shadow: 0px 10px 20px  rgba(237, 229, 240, 0.804289) ;
+            position: relative;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: $secondary-color;
+            @include tablet {
+                width: 399px;
+                height: 175px;
+                border-radius: 28px;
+            }
             @include mobile {
-                position: relative;
-                flex-direction: column;
-                justify-content: space-around;
                 width: 311px;
                 height: 175px;
-                background-color: $secondary-color;
                 border-radius: 24px; 
             }
             .content-wrapper {
+                @include tablet {
+                    width: 187px;
+                    height: 64px;
+                    padding-left: 40px;
+                    padding-top: 0px;
+                }
                 @include mobile {
                     width: 187px;
                     height: 86px;
@@ -107,11 +188,18 @@
                 .card-title {
                     color: $dark-color;
                     font-weight: 700;
+                    @include tablet {
+                        font-size: $h6-mobile-size;
+                    }
                     @include mobile {
                         position: relative;
                     }
                     .notification {
                         position: absolute;
+                        @include tablet {
+                            top: 51px;
+                            left: 226px;
+                        }
                         @include mobile {
                             top: 0px;
                             left: 187px;
@@ -131,8 +219,13 @@
                 }
             }
             .card-active-img {
+                position: absolute;
+                @include tablet {
+                    left: 235px;
+                    width: 150px;
+                    height: 150px;
+                }
                 @include mobile {
-                    position: absolute;
                     left: 235px;
                     width: 150px;
                     height: 150px;
